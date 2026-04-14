@@ -2,6 +2,16 @@
 
 ## Agentic Coding & Agent Harnesses
 
+### Matt Pocock: AI coding frameworks (BMAD, GSD, Spec-Kit) are frustrating people
+After running an AI coding course for ~2,000 people, Matt's biggest takeaway: people are dissatisfied with opinionated agent frameworks like BMAD, GSD, and Spec-Kit. The core issue is that giving away control of context to a framework makes things harder to debug. His advice: own the process. The thread blew up with agreement — multiple people compared it to the Agile/Waterfall debate. Matt clarified he thinks good frameworks hand control to the user and are easy to observe, but these ones don't. Several people noted that minimal CLAUDE.md + focused prompts beats heavyweight frameworks.
+
+- [Thread with discussion](https://x.com/mattpocockuk/status/2044029094942159126)
+
+### Matt Pocock: new agent skill idea — "go up a layer of abstraction"
+Matt's been prompting agents with: "I don't know this area of code well. Go up a layer of abstraction. Give me a map of all the relevant modules and callers." Asking for name suggestions for this as a reusable skill.
+
+- [Tweet](https://x.com/mattpocockuk/status/2043948993105867082)
+
 ### Theo built an agent harness from scratch to demystify them
 Theo's new video walks through building an agent harness to show they aren't "black magic." Massive engagement — multiple RTs and follow-up discussion. He also dropped the take that "Markdown is the new Python," which Garry Tan endorsed.
 
@@ -145,10 +155,17 @@ Thariq argues that prompting will remain an incredibly high-leverage skill like 
 
 ## OpenClaw & Ecosystem
 
+### OpenClaw 2026.4.14 release
+Latest release with smarter GPT-5.4 routing and recovery, Chrome/CDP improvements, subagent fixes (no longer get stuck), Slack/Telegram/Discord fixes, and various performance improvements. steipete says this release makes him "unreasonably happy" since he wasn't involved at all — the maintainer team shipped it while he preps for TED Talks in Vancouver.
+
+- [Release notes](https://github.com/openclaw/openclaw/releases/tag/v2026.4.14)
+- [steipete's reaction](https://x.com/steipete/status/2044047222481019300)
+
 ### OpenClaw 2026.4.12 release
-New release with stability improvements, audio transcription fixes, better chat/TTS/WhatsApp, memory/plugin/cron/subagent fixes. The active-memory plugin and QMD are getting rave reviews for dramatically improving response quality.
+Previous release with stability improvements, audio transcription fixes, better chat/TTS/WhatsApp, memory/plugin/cron/subagent fixes. Also added bundled LM Studio integration, Codex provider support, and a new "Lean mode" for smaller local models (8B and up).
 
 - [Release notes](https://github.com/openclaw/openclaw/releases/tag/v2026.4.12)
+- [Lean mode for local models](https://x.com/ImLukeF/status/2044051477745000521)
 
 ### steipete: strict mode and Codex-as-harness for OpenClaw
 Two experiments: (1) a "strict-agentic" execution contract that forces GPT-5.x to keep working instead of stopping at plans, and (2) pluggable harnesses so you can swap in Codex or Anthropic's SDK as the OpenClaw harness.
@@ -186,6 +203,11 @@ Jared Palmer announced stacked PRs on GitHub are now in private preview with a w
 Automated review is the first stage now, flagging SDKs with attribution data as ads and Firebase anonymous auth as login flows. Fix: add a note in App Review Information clarifying.
 
 - [Thread](https://x.com/seraleev/status/2043150388992328168)
+
+### gemini-cli headless mode blocks you for "automated queries"
+Google's gemini-cli has a headless mode for running in automated scripts, but if you actually use it that way, Google cuts you off for sending "automated queries." RT'd by steipete with widespread disbelief.
+
+- [Tweet](https://x.com/airkatakana/status/2043701124423938262)
 
 ### Spain's Cloudflare blocks are breaking Docker
 Theo flagged that Spain's aggressive Cloudflare blocks are now affecting Docker pulls.
