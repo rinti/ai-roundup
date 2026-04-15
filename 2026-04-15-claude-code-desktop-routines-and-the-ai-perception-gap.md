@@ -8,7 +8,9 @@ The biggest news of the day: **Anthropic shipped a rebuilt Claude Code desktop a
 
 The desktop app has been redesigned from the ground up for parallelizing work — run multiple Claude sessions side by side from one window with a new sidebar to manage them all. Boris Cherny ([@bcherny](https://x.com/bcherny)) commented: "We've been working on this for a while. Can't wait to hear what you think." — [announcement](https://x.com/amorriscode/status/2044129923644961155)
 
-**Claude Code Routines** let you configure a templated agent (prompt + repo + connectors) that runs on a schedule, from an API call, or in response to a GitHub event — all on Anthropic's web infrastructure, so you don't need your laptop open. Internally at Anthropic they've been using them for docs and backlog maintenance. — [details](https://x.com/noahzweben/status/2044093913376706655), get started at [claude.ai/code/routines](https://claude.ai/code/routines)
+**Claude Code Routines** let you configure a templated agent (prompt + repo + connectors) that runs on a schedule, from an API call, or in response to a GitHub event — all on Anthropic's web infrastructure, so you don't need your laptop open. Internally at Anthropic they've been using them for docs and backlog maintenance. Limits: Pro users get 5 routines/day, Max 15, Team/Enterprise 25. — [details](https://x.com/noahzweben/status/2044093913376706655), get started at [claude.ai/code/routines](https://claude.ai/code/routines), [docs](https://code.claude.com/docs/en/routines)
+
+Press coverage: [9to5Mac](https://9to5mac.com/2026/04/14/anthropic-adds-repeatable-routines-feature-to-claude-code-heres-how-it-works/) | [SiliconANGLE](https://siliconangle.com/2026/04/14/anthropics-claude-code-gets-automated-routines-desktop-makeover/) | [The Register](https://www.theregister.com/2026/04/14/claude_code_routines)
 
 ### Cursor Ships CLI Updates + Sentry Automations
 
@@ -47,6 +49,14 @@ Another tip from Matt: "Want to put something in CLAUDE.md? Stick it in CODE_STA
 LLMJunky reported seeing **no context degradation through large context or compaction** with Claude models, calling it "the biggest QoL update" — but noted GPT 5.x models are an exception. — [post](https://x.com/LLMJunky/status/2044128351103717656)
 
 Armin Ronacher ([@mitsuhiko](https://x.com/mitsuhiko)) was more blunt about GPT: "gpt 5.4 is bread, but it's so damn talkative bread. No personality but so damn chatty." — [post](https://x.com/mitsuhiko/status/2044176088041914449)
+
+### Claude Performance Backlash Hits the Press
+
+A major story that blew up over April 13-14: multiple outlets reported on **growing user backlash over perceived Claude quality decline**. The core issue: Anthropic quietly reduced the model's default "effort" level to "medium" to economize on tokens. Boris Cherny ([@bcherny](https://x.com/bcherny)) confirmed the change was in response to feedback that Claude was consuming too many tokens per task, but many users complained the change wasn't communicated transparently. Thariq ([@trq212](https://x.com/trq212)) had earlier posted about adjusting 5-hour session limits during peak hours to manage growing demand.
+
+The controversy is particularly pointed because Anthropic has built its brand on transparency. There's also speculation about compute capacity constraints after adoption soared. On April 13, Claude also experienced intermittent 500 errors across claude.ai, the API, and Claude Code.
+
+Coverage: [Fortune](https://fortune.com/2026/04/14/anthropic-claude-performance-decline-user-complaints-backlash-lack-of-transparency-accusations-compute-crunch/) | [VentureBeat](https://venturebeat.com/technology/is-anthropic-nerfing-claude-users-increasingly-report-performance) | [The Register](https://www.theregister.com/2026/04/13/claude_outage_quality_complaints/) | [The Register (cache confusion)](https://www.theregister.com/2026/04/13/claude_code_cache_confusion/)
 
 ---
 
