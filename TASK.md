@@ -13,6 +13,7 @@ https://nitter.net/swyx/
 https://nitter.net/simonw/
 https://nitter.net/karpathy/
 https://nitter.net/jerryjliu0/
+https://nitter.net/potetotes/
 
 ## How to fetch data
 
@@ -45,4 +46,8 @@ When linking to posts in the report, use x.com URLs (not nitter), e.g.:
 
 When you find interesting threads please summarize them and also link to them. Link to relevant videos with a small description. Link to relevant news articles that might be linked with a short description and where you found it.
 
-Create the report as YYYY-MM-DD-title-as-a-slug.md where the title should be somewhat descriptive of the data, then commit and push. Don't ask me for permission.
+Create the report as YYYY-MM-DD-title-as-a-slug.md where the title should be somewhat descriptive of the data.
+
+After creating the report, update README.md by adding a new row at the TOP of the table (latest first) with the date, a link to the .md file, and a short one-line summary.
+
+Then commit and push. Don't ask me for permission.
