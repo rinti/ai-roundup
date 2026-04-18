@@ -6,6 +6,7 @@ Daily summaries of AI discussions, news, and releases from coding/agentic AI Twi
 
 | Date | Report | Summary |
 |------|--------|---------|
+| 2026-04-18 | [Claude Design, Skill Stacks & Opus 4.7 Aftermath](roundups/2026-04-18-claude-design-skill-stacks-and-opus-aftermath.md) | Claude Design launches (and eats Theo's files), Matt Pocock publishes full skill lineup + slopwatch observability, LLMJunky ships Codex Linux app, Simon says LLMs now handle legacy code, Endor Labs crowns Cursor most secure harness |
 | 2026-04-17 | [Claude Opus 4.7 Launch & Codex Computer Use](roundups/2026-04-17-claude-opus-4-7-launch-and-codex-computer-use.md) | Opus 4.7 ships with auto mode/xhigh/focus, Codex Desktop adds computer use, Qwen 3.6 beats Opus on pelican bench, ParseBench shows chart gains at 7¢/page, harness-vs-slop split |
 | 2026-04-16 | [Cal.com Closes Source, Shopify Autoresearch Results, Cursor Canvas](roundups/2026-04-16-cal-com-closes-source-autoresearch-and-cursor-canvas.md) | Cal.com goes closed source sparking debate, Shopify autoresearch shows 300x test speedups, Cursor ships interactive canvases, Sentry's team agent case study |
 | 2026-04-15 | [Claude Code Desktop, Routines & the AI Perception Gap](roundups/2026-04-15-claude-code-desktop-routines-and-the-ai-perception-gap.md) | Claude Code desktop redesign with routines, framework fatigue debate, MiniMax M2.7 local setups, Karpathy on AI capability perception gap |
