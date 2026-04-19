@@ -6,6 +6,7 @@ Daily summaries of AI discussions, news, and releases from coding/agentic AI Twi
 
 | Date | Report | Summary |
 |------|--------|---------|
+| 2026-04-19 | [Opus Prompt Archaeology, T3 Code Bans & Vienna Codex](roundups/2026-04-19-opus-prompt-archaeology-t3-bans-and-vienna-codex.md) | Anthropic silently bans T3 Code users then reverses, Simon diffs Opus 4.6→4.7 system prompt, Vienna Codex hackathon's vibecoded judging tool needs unfucking, AIE talks beat TED on YouTube, Matt Pocock's /domain-model skill replaces /grill-me, OpenCode desktop drops Tauri for Electron |
 | 2026-04-18 | [Claude Design, Skill Stacks & Opus 4.7 Aftermath](roundups/2026-04-18-claude-design-skill-stacks-and-opus-aftermath.md) | Claude Design launches (and eats Theo's files), Matt Pocock publishes full skill lineup + slopwatch observability, LLMJunky ships Codex Linux app, Simon says LLMs now handle legacy code, Endor Labs crowns Cursor most secure harness |
 | 2026-04-17 | [Claude Opus 4.7 Launch & Codex Computer Use](roundups/2026-04-17-claude-opus-4-7-launch-and-codex-computer-use.md) | Opus 4.7 ships with auto mode/xhigh/focus, Codex Desktop adds computer use, Qwen 3.6 beats Opus on pelican bench, ParseBench shows chart gains at 7¢/page, harness-vs-slop split |
 | 2026-04-16 | [Cal.com Closes Source, Shopify Autoresearch Results, Cursor Canvas](roundups/2026-04-16-cal-com-closes-source-autoresearch-and-cursor-canvas.md) | Cal.com goes closed source sparking debate, Shopify autoresearch shows 300x test speedups, Cursor ships interactive canvases, Sentry's team agent case study |
