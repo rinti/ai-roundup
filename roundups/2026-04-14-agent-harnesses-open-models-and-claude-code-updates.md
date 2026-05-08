@@ -1,3 +1,17 @@
+---
+title: 'Agent Harnesses, Open Models & Claude Code Updates'
+date: '2026-04-14'
+summary: >-
+  Theo's agent harness video, Sandcastle 0.4.1, Claude Code
+  NO_FLICKER/ultraplan/Monitor, MiniMax M2.7, Karpathy AI gap thread
+tags:
+  - Agentic Coding & Agent Harnesses
+  - Claude Code & Anthropic Updates
+  - Open Source Models & Local AI
+  - Industry Discussion & Takes
+  - OpenClaw & Ecosystem
+  - Other Notable Items
+---
 # AI Roundup — April 14, 2026
 
 ## Agentic Coding & Agent Harnesses

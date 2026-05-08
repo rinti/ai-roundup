@@ -1,3 +1,42 @@
+---
+title: 'Auto Mode''s Hidden Prompt, Railway Agent Wipes Prod & ClawSweeper Hits 30K PRs'
+date: '2026-04-27'
+summary: >-
+  Matt Pocock confirms Claude Code's Auto Mode silently injects "be more AFK"
+  into the system prompt, breaking `/grill-me` and similar wait-for-input skills
+  (Mateusz: just ask Claude what's making it skip and it'll cite the injection;
+  Theo pitches Pi for full ownership; Vincent notes auto-mode runs a separate
+  gating model that burns tokens); Simon Willison's two-line postmortem on the
+  viral JER/Railway agent-wipes-production story — don't run agents anywhere
+  they can touch prod credentials, keep external tested backups (Dirk Kok:
+  ambient creds make CLAUDE.md rules conventions not constraints; HeyMeng:
+  "agent autonomy didn't break production, an unscoped credential did, agent
+  autonomy just gave it the keyboard"; Zain Rizvi notes Railway's API keys have
+  zero auth granularity; Simon agrees every agent framework needs sandboxing as
+  a primitive, not an exercise); Steipete reports OpenClaw's
+  clawsweeper+clownfish closed 10K issues / 5K PRs this week, 27K/30K cumulative
+  since December (skeptics: half are agents closing what agents opened, no
+  bounce-back-rate published, OpenClaw 4.24 had its worst breaking change yet);
+  leerob's "coding agent → general agent for all knowledge work" thesis gets
+  validated by Chen Avnery (12 prod agents, 8 write zero code, "coding agent was
+  the Trojan horse") with leerob's gloss: stuff that can't be RLed against comes
+  last; GPT-5.5 in Cursor at 50% off and #1 on CursorBench (72.8%), Theo notes
+  xhigh is still cheaper than Sonnet on AAI; mitsuhiko ships MLX tool-param
+  streaming patch + a rope-man-game ninja extension; Steipete drops Birdclaw
+  (local Twitter archive) and moves OpenClaw test runs to Blacksmith 32vCPU;
+  Theo crowdfunds @uwukko a 64GB Mac to build Helium browser; Mappletons GitHub
+  talk on why PRs are no longer fit for purpose.
+tags:
+  - Auto Mode is silently injecting "be more AFK" into the system prompt
+  - >-
+    Simon Willison's two-line postmortem on the Railway/JER agent that nuked
+    production
+  - 'ClawSweeper + Clownfish: 27K issues, 30K PRs closed since December'
+  - 'Lee Robinson''s retrospective: coding agent → general agent'
+  - 'GPT-5.5 keeps dunking, even on price'
+  - Quick hits
+  - Off-topic
+---
 # 2026-04-27 — Auto Mode's Hidden Prompt, Railway Agent Wipes Prod & ClawSweeper Hits 30K PRs
 
 ## Auto Mode is silently injecting "be more AFK" into the system prompt

@@ -49,6 +49,24 @@ When you find interesting threads please summarize them and also link to them. L
 
 Create the report as `roundups/YYYY-MM-DD-title-as-a-slug.md` where the title should be somewhat descriptive of the data.
 
-After creating the report, update README.md by adding a new row at the TOP of the table (latest first) with the date, a link to the .md file (using `roundups/` prefix), and a short one-line summary.
+The file MUST start with a YAML front matter block. Example:
 
-Then commit and push. Don't ask me for permission.
+```yaml
+---
+title: "Anthropic ↔ SpaceX, Dreaming Lands & robobun Outpaces Jarred"
+date: 2026-05-07
+summary: "One paragraph (can be long) summarizing the dispatch — used as the kicker on the issue page and as the entry summary on the archive index. Markdown emphasis (**bold**, *italic*) is fine."
+tags:
+  - Agentic Coding & Agent Harnesses
+  - Claude Code & Anthropic Updates
+---
+```
+
+- `title` — the human title (no leading date).
+- `date` — ISO date matching the filename.
+- `summary` — the kicker / index summary. The same kind of rich one-paragraph summary that previously went in the README's third column.
+- `tags` — the H2 section names you'll use in the body. Keep them aligned with the section headings.
+
+After the front matter block, write the report body as before — start with `# AI Roundup — Month D, YYYY` (or similar), then `## Section` headings.
+
+Do NOT update README.md. The site is built automatically from the markdown files by `build.js` (run by GitHub Actions on push), so just commit the new `roundups/*.md` and push. Don't ask me for permission.

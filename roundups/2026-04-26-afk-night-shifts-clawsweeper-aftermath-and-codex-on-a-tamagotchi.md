@@ -1,3 +1,35 @@
+---
+title: 'AFK Night Shifts, ClawSweeper Aftermath & Codex on a Tamagotchi'
+date: '2026-04-26'
+summary: >-
+  Matt Pocock publishes a detailed Day-Shift/Night-Shift AFK playbook
+  (`/grill-me` → `/to-prd` → planner agent → Sandcastle-sandboxed implementers →
+  automated reviewer → manual QA) with honest reality checks on when AFK fails;
+  Cursor's potetotes counter-argues "depth not breadth" — best-of-N races,
+  adversarial review, parallel repro attempts beat juggling 10 agents on 10
+  problems; ClawSweeper aftermath: GitHub upgrades OpenClaw maintainers to
+  Enterprise on a weekend, second-strike "intent-based clustering" + Project
+  Clowfish queued, plus an unglamorous engineering thread on cutting OpenRouter
+  token usage 35% via tool-result/cache plumbing; Jerry Liu's ParseBench on
+  GPT-5.5 — wins tables/visual grounding, loses content faithfulness/semantic
+  formatting to Opus 4.7, costs ~5x competitive OCR at 13c/page mid-thinking;
+  Theo notes GPT-5.5 (xhigh) is *still* cheaper than Sonnet on the Artificial
+  Analysis Index and co-signs Sam Hogan's "best programmers are writing code by
+  hand again"; LLMJunky adds Dimillian's Apple-ecosystem skills to Codex
+  Marketplace, teases Codex Mobile App, runs Codex on a Tamagotchi; Steipete
+  drops Summarize 0.14, CodexBar 0.23, wacrawl 0.1 (read-only WhatsApp Desktop
+  archiver) and acpx 0.6; mitsuhiko ships a Pi-agent drawing extension during a
+  game jam; simonw asks who's running DeepSeek-V4-Flash on a Mac yet
+tags:
+  - The AFK / parallel-agents debate
+  - ClawSweeper aftermath
+  - 'GPT-5.5 reactions, day 2'
+  - Codex on every device
+  - Steipete's tool drops
+  - Misc
+  - Videos & talks
+  - Off-topic
+---
 # AI Roundup — 2026-04-26
 
 A quieter Saturday after a week of model launches, but the agentic-orchestration debate kept going. Matt Pocock published a detailed AFK Day-Shift/Night-Shift playbook in response to "AFK agents are a myth" pushback, Steipete's ClawSweeper kept melting GitHub's servers (they upgraded the OpenClaw maintainers to Enterprise on a weekend), Cursor's Pontus pushed back on broad parallelism in favor of going deep, Jerry Liu's ParseBench numbers landed on GPT-5.5, and LLMJunky put Codex on a Tamagotchi.

@@ -1,3 +1,18 @@
+---
+title: 'Vercel Breach, Opus 4.7 Token Economics & MCP Future'
+date: '2026-04-20'
+summary: >-
+  Vercel pwned via Context.ai with AI-accelerated attackers, Simon clocks Opus
+  4.7 at 1.46x text tokens vs 4.6 (effectively a price hike), MCP Future keynote
+  pits MCP vs Skills vs CLIs, CMUX ships Codex↔Claude Code agent-to-agent comms,
+  ParseBench confirms 4.7 doc gains, T3 Code ban reversed
+tags:
+  - 'Vercel breach, Opus 4.7 token economics, MCP future'
+  - Agentic & code AI
+  - 'Security (AI-adjacent, worth your attention)'
+  - Other
+  - Quiet today
+---
 # AI Roundup — 2026-04-20
 
 ## Vercel breach, Opus 4.7 token economics, MCP future

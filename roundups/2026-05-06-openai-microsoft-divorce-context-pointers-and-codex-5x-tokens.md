@@ -1,3 +1,71 @@
+---
+title: >-
+  OpenAI ↔ Microsoft Divorce, Context Pointers vs Skills & Codex's 10x Token
+  Gift
+date: '2026-05-06'
+summary: >-
+  **Theo's pinned OpenAI ↔ Microsoft "breakup" video** (47K likes) reframes the
+  post-deal compute landscape — derrick_dao: "OAI needs vertical control,
+  Microsoft trades exclusivity for Anthropic margin, both got the divorce they
+  wanted"; Tyler Gardner: "Azure credits were OpenAI's oxygen, ~$0.03/GPT-4
+  query without the subsidy"; tonitrades_ counters with "Microsoft still owns
+  49% of OpenAI profits, just lost compute exclusivity"; **Code with Claude
+  tomorrow** — bcherny: "See everyone tomorrow!!", Thariq doing "how we Claude
+  Code" workshop with "fun announcements ahead"; **Mattpocock's "Context
+  Pointers"** crystallizes as the AGENTS.md design pattern of the week ("Our
+  AGENTS.md used to be huge, now it's mostly context pointers" — Phoenix: "2000
+  lines → ~200, cap pointer depth at 2 levels or agent burns tokens traversing";
+  Aleksandr Fulha: "only works if the harness resolves the pointer automatically
+  — half ours were proud naming convention until we caught Claude guessing what
+  was on the other side"; Vercel counter via Jeremy Mack: "AGENTS.md outperforms
+  skills in our agent evals — 8KB index hit 100% on Next.js 16, skills maxed
+  79%"); **Codex 5/5 token party lands** — rate limits 10x'd for everyone who
+  attended in person, LLMJunky salty he didn't sign up because he didn't know
+  OpenAI was paying $900 flights + hotels ("hope you get a SEVERE 3rd degree
+  papercut on the same finger you press 'Accept Edits' with"); **TickerTrends's
+  46M Codex vs 491K Claude Code npm downloads chart gets debunked** — Sam Altman
+  replies "this is not possibly accurate", paradite_: "npm is no longer an
+  official channel for Claude Code, deprecated for months", and **mitsuhiko
+  introduces the new "your CI is being run by agents" hypothesis** ("clanker/CI
+  gone wild explains this more than 'they all decided to go to codex at the same
+  time' — or something started depending on it"; Jai Jalan: "when agents commit
+  and retrigger pipelines, your standard 'what changed' query returns hundreds
+  of commits with no human intent"); **Steipete ships 10 .sh CLIs in one day**
+  (sonoscli, wacli, birdclaw, gitcrawl, discrawl, spogo, imsg, mcporter, sag,
+  askoracle), plus fs-safe ("stop treating string normalization as a filesystem
+  boundary, use a root handle"), CodexBar 0.24, imsg 0.6+0.7 — kuma 18: "exactly
+  the kind of tiny CLI stack that becomes useful once agents need real local
+  handles"; kiosa frames: "Anthropic banned it, he hired a team, and now Codex
+  is writing CLI wrappers for literally everything, the lobster army is real";
+  **Simon Willison on AI-run businesses** — Andon Labs' AI-run cafe in
+  Stockholm, Simon's framing: "interesting up to the point where they waste the
+  time of humans who haven't opted into the experiments" (Virgil: "human in the
+  loop can still be fake consent — a lot of agentic outbound feels less like
+  automation and more like conscription"; Mian Shafiq: "added
+  human-approves-first-message rule, complaints dropped to near zero, response
+  rates went up"); **Bun's Zig→Rust port confirmed experimental, not a switch**
+  (Simon Willison); Mitsuhiko: "having non-engineers ship code sucks for every
+  engineer on the org"; Cofounder 2 ships ("infrastructure for the one-person
+  billion-dollar company") with Jerry Liu boost; Theo's $1M Azure podcast drops;
+  mattpocock 200K YouTube subs + AI Coding Dictionary teasing + 60K skills repo
+  gaining on gstack; Redis ships a new array data type; .de domain offline
+  ("Deutschland hat fertig").
+tags:
+  - Theo's "OpenAI and Microsoft broke up" deep-dive
+  - Code with Claude is tomorrow — bcherny + Thariq tease announcements
+  - Mattpocock's "Context Pointers" — the AGENTS.md design pattern
+  - 'Codex''s 5/5 party gift: rate limits 10x''d'
+  - Codex vs Claude Code download numbers — Sam Altman objects
+  - Steipete's CLI shipping rampage — 10 .sh tools in a day
+  - >-
+    Simon Willison: "AI started a cafe in Stockholm — please keep humans in the
+    loop"
+  - 'Bun Zig→Rust port: experimental branch, not a switch (confirmed)'
+  - 'Cofounder 2: "Run an entire company with agents"'
+  - 'Mitsuhiko: "Why does everyone want managers to be ICs?"'
+  - Quick hits
+  - Off-topic but funny
+---
 # 2026-05-06 — OpenAI ↔ Microsoft Divorce, Context Pointers vs Skills & Codex's 10x Token Gift
 
 ## Theo's "OpenAI and Microsoft broke up" deep-dive

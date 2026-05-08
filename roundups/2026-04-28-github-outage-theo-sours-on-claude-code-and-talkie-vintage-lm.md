@@ -1,3 +1,54 @@
+---
+title: 'GitHub Down Half the Day, Theo Sours on Claude Code & Talkie''s Pre-1931 LM'
+date: '2026-04-28'
+summary: >-
+  GitHub Issues hard down for hours (mitsuhiko: status page is "not even
+  honest", theo: "never been so ready to move on"); Theo's full reversal on
+  Claude Code ("I defended Anthropic in December and January. Opus 4.5 was a
+  defining moment. This is why I'm so frustrated") triggered by an outdated
+  Pro-loses-Opus support article that Thariq corrected after the dunks landed;
+  Tibo resets Codex rate limits across all paid plans "to celebrate a good week"
+  with GPT-5.5 (the contrast in vibes vs Anthropic's rate-limit-tightening
+  posture is the meta-story); LLMJunky boosts a workflow where the Codex agent
+  logs into ChatGPT-the-product in its built-in browser to consult GPT-5.5 Pro
+  on stuck moments — no API key, ChatGPT subscription auths via cookies; Simon
+  Willison's notes on Talkie (Alec Radford et al's "vintage" LM trained on 260B
+  tokens of pre-1931 English) and Microsoft's MIT-licensed VibeVoice STT with
+  speaker diarization (4bit MLX, 60GB RAM peak, 1hr audio in 9min on M5
+  MacBook); Simon flags that today's Microsoft/OpenAI revenue-share announcement
+  says payments continue through 2030 "independent of OpenAI's technology
+  progress" — i.e. the AGI termination clause is dead; mitsuhiko drops empirical
+  pushback on llms.txt: his pi agent used it 1 time across 1730 sessions, and
+  the one hit was Cloudflare hinting at it via HTML header after a 403 (also
+  ships mlx-lm tool-parameter streaming patch); Pocock's claude-code-skills repo
+  hits 28K stars (#1 trending repo in the world), /diagnose skill in development
+  as "wrap the bug in an AFK feedback loop" pattern, /grill-me used by `@9er5on`
+  to interview themselves through their mum's eulogy, plus more proof that
+  Claude Code makes different decisions in auto mode; Steipete shares first
+  300-user enterprise OpenClaw deployment (GKE + gVisor + read-only workspaces +
+  read-only New Relic/GitHub/Notion integrations), plugin-perf rewrite that
+  drops first output from 1s to 43ms and config validation 62ms→5ms, plus a
+  "Holy shit" first-time-in-months testimonial; Jerry Liu's ParseBench grows to
+  2k verified pages and llama_index ships a LlamaParse + Claude Agent SDK
+  loan-processing pipeline; leerob's "we don't know how to do it" video about
+  Yamauchi No.10 site as the canonical "AI hasn't subsumed taste yet" data
+  point; Helium browser donation drive concludes (Theo + heyandras + photomatt +
+  theCTO); LLMJunky's "best marriage advice from Claude" / "you're absolutely
+  right" hits 17K likes.
+tags:
+  - 'GitHub goes hard down for hours, Issues UI dead'
+  - Theo's full reversal on Claude Code
+  - Tibo resets Codex rate limits for "good vibes"
+  - Codex browser → ChatGPT Pro consultation pattern
+  - Simon's Talkie & VibeVoice notes
+  - '"AGI clause is deceased": Microsoft/OpenAI revenue share locked through 2030'
+  - 'Mitsuhiko: llms.txt is doing nothing'
+  - 'Matt Pocock: skills repo at 28K, /diagnose in flight, auto-mode aftermath'
+  - 'Steipete: 300-user enterprise OpenClaw, perf wins, CI infra'
+  - 'Jerry Liu: ParseBench grows up, LlamaParse + Claude Agent SDK loan pipeline'
+  - Quick hits
+  - Off-topic / fun
+---
 # 2026-04-28 — GitHub Down Half the Day, Theo Sours on Claude Code & Talkie's Pre-1931 LM
 
 ## GitHub goes hard down for hours, Issues UI dead

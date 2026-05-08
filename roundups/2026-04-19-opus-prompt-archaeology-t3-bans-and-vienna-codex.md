@@ -1,3 +1,22 @@
+---
+title: 'Opus Prompt Archaeology, T3 Code Bans & Vienna Codex'
+date: '2026-04-19'
+summary: >-
+  Anthropic silently bans T3 Code users then reverses, Simon diffs Opus 4.6→4.7
+  system prompt, Vienna Codex hackathon's vibecoded judging tool needs
+  unfucking, AIE talks beat TED on YouTube, Matt Pocock's /domain-model skill
+  replaces /grill-me, OpenCode desktop drops Tauri for Electron
+tags:
+  - 'Anthropic silently bans T3 Code users, then reverses'
+  - Simon Willison diffs the Opus 4.6 → 4.7 system prompt
+  - Vienna Codex Hackathon at the Sentry office
+  - AIE "beats" TED — Singapore dates announced
+  - LLMJunky's Codex Superapp feedback thread
+  - Tools and libraries
+  - 'Podcast: Theo + davis7 — "Gstack-pill me"'
+  - Also noted
+  - Non-agent side
+---
 # Opus Prompt Archaeology, T3 Code Bans, and Vienna Codex Vibes
 
 **Date:** 2026-04-19

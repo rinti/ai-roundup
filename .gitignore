@@ -1,3 +1,4 @@
-roundup-error.log
-roundup.log
-
+node_modules/
+docs/
+*.log
+.DS_Store

@@ -1,3 +1,28 @@
+---
+title: 'Flipbook''s Live-Rendered UI, /ultrareview Ships & Qwen3.6-27B Punches Up'
+date: '2026-04-23'
+summary: >-
+  Karpathy boosts Flipbook's "every pixel streamed from a model" prototype,
+  Claude Code ships /ultrareview cloud bug-hunter fleets (and wins a Webby),
+  swyx interviews Shopify CTO on AI-native engineering (widening token
+  percentile deltas), Qwen3.6-27B dense beats Qwen3.5-397B MoE on coding
+  benchmarks, LlamaIndex's LiteParse parses PDFs with zero ML via grid
+  projection, swyx reframes GPT-Image-2-Thinking as an image AGENT, OpenAI
+  un-deprecates text-embedding-3-small after Simon calls it out, LLMJunky
+  launches Codex Marketplace for community skills/hooks
+tags:
+  - 'Flipbook: no HTML, no layout engine, just pixels from a model'
+  - Claude Code ships /ultrareview — fleet of cloud bug-hunters
+  - Shopify's AI-native engineering — swyx's new Latent Space episode
+  - 'Qwen3.6-27B: 27B dense beats 397B MoE on coding'
+  - 'LiteParse: PDF parser with zero ML'
+  - swyx's GPT-Image-2 vs GPT-Image-2-Thinking framing
+  - 'Codex Marketplace: LLMJunky''s community plugin registry'
+  - OpenAI un-deprecates text-embedding-3-small after Simon calls it out
+  - Infra / ops
+  - Non-agent sidebar
+  - Open questions
+---
 # 2026-04-23 — Flipbook's live-rendered UI, Claude Code /ultrareview, and Qwen3.6-27B punches up
 
 Quieter day than yesterday's Claude Code pricing fiasco, but the signal-to-hype ratio is better. Three threads worth your time: a "pixel-streaming" UI prototype that Karpathy boosted, a new agentic review command in Claude Code, and Qwen shipping a 27B dense model that beats their own 397B MoE on coding benchmarks.

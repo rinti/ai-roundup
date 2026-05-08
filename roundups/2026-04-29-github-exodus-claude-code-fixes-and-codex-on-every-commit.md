@@ -1,3 +1,63 @@
+---
+title: 'GitHub Exodus Goes Public, Claude Code Ships 50+ Fixes & Codex-on-Every-Commit'
+date: '2026-04-29'
+summary: >-
+  Mitchell Hashimoto publishes "Ghostty is leaving GitHub" after tracking
+  near-daily outages for a month ("not a place for serious work if it just
+  blocks you out for hours per day, every day") — read-only mirror stays,
+  replacement provider TBD, only Ghostty moves for now; mitsuhiko's companion
+  "before-GitHub" obituary lands the sharper argument that GitHub *accidentally*
+  became OSS's archive and decentralization has no successor for that, warning
+  of a return to "broken tarball links and abandoned Trac instances"; steipete
+  adds the agent-era angle ("Agents just HAMMER their API" — codex literally
+  clicks around the GitHub UI to bypass rate limits and is migrating to ghx) so
+  the platform-flight story now has product, narrative, and infra sponsors
+  aligned; Anthropic's recovery posture lands with ClaudeDevs/bcherny shipping
+  50+ stability/perf fixes across the last four CC releases (faster resume,
+  stable auth, lower memory, fewer hangs) and Thariq teasing the no-flicker
+  renderer becoming the default plus a fix for the long-standing big-file-write
+  hangs ("my white whale is when CC sometimes looks like it hangs during big
+  file writes, I think we found it"); steipete deploys the most ambitious AFK
+  pattern of the week — codex now reviews every commit landing on OpenClaw main,
+  and if a "booboo" is found a new codex spins up to PR the fix, then a
+  review-agent reviews the fix, up to 5 loops (already caught a regression
+  within 10 minutes of deploy); plus an OpenClaw plugin-perf rewrite (1s → 43ms
+  first output, 265ms → 8ms plugin bootstrap); Cursor 3 `/multitask` lets you
+  run Opus 4.7 + Composer 2 + Gemini 3.1 Pro + GPT-5.5 simultaneously in one
+  prompt (potetotes: "in the next version you can multitask with a horde of
+  goblins"), Endor Labs benchmark again puts Cursor's harness on top for
+  correctness/security, while the Codex camp counter-argues "GPT-5.5 just gets
+  things done — wild that people still think CC with Opus 4.7 is better" — the
+  three-way harness war is real; Warp goes open-source (Theo: "this is good!")
+  opening the AI-terminal market; mattpocockuk's skills repo still #1 on GitHub
+  trending with skills now working across GitHub/Jira/Linear/local files via a
+  single setup and `/domain-model` getting renamed to `/grill-with-docs`;
+  LlamaIndex launches ParseBench on Kaggle (2k verified enterprise pages,
+  focuses on bold/italic/strikethrough/superscript that other OCR benchmarks
+  ignore — "'$199' struck through next to '$149' isn't decoration, it's the
+  meaning"); LLMJunky's Goodhart's-law rant ("the model you keep open in a tab
+  isn't necessarily the one topping a leaderboard, it's the one that produces
+  fewer bugs"); mitsuhiko's clean micro-essay on
+  agents-as-accessibility-engineers (used the agent to add a visual-assist +
+  practice mode to his son's game instead of dumbing the difficulty down);
+  Theo's pinned new "Picking what to learn has never been harder" video;
+  karpathy boosts Talkie ("can we teach talkie to code?"); simonw's uv one-liner
+  for VibeVoice STT (1hr audio → 9 min on M5); leerob's three-rule perf primer;
+  Latent Space ships its $15B Applied Intuition deep-dive.
+tags:
+  - 'Mitchell Hashimoto: Ghostty is leaving GitHub'
+  - Armin Ronacher's "before GitHub" obituary
+  - Anthropic ships 50+ Claude Code fixes — recovery posture
+  - 'Steipete: codex now reviews every commit landing on main'
+  - 'Cursor 3 /multitask — four frontier models, one prompt'
+  - Warp goes open-source
+  - 'mattpocockuk''s /skills repo: top of GitHub trending'
+  - LlamaIndex drops ParseBench
+  - LLMJunky's Goodhart's-law-on-leaderboards rant
+  - Mitsuhiko's agent-as-accessibility-engineer micro-essay
+  - Other notable
+  - Off-topic but flagged
+---
 # 2026-04-29 — GitHub Exodus Goes Public, Claude Code Ships 50+ Fixes & Codex-On-Every-Commit
 
 ## Mitchell Hashimoto: Ghostty is leaving GitHub

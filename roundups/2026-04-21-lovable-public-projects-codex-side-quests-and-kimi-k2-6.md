@@ -1,3 +1,26 @@
+---
+title: 'Lovable''s "Public" Confusion, Codex Side Quests & Kimi K2.6'
+date: '2026-04-21'
+summary: >-
+  Lovable clarifies public-project chats weren't a breach but a docs failure,
+  Codex 0.122.0 ships `/side` ephemeral forks and an uptime-streak-ending
+  outage, Kimi K2.6 claims open-source SOTA with 4,000+ tool calls over 12
+  hours, Opus refuses basic crypto challenges, Simon pegs Opus 4.7 PDFs at 1.08x
+  (not 1.46x), Delve "self-audited" Context.ai for SOC 2, Tim Cook out at Apple
+tags:
+  - 'Lovable drama: public projects ≠ data breach'
+  - 'Codex 0.122.0: Side Quests'
+  - 'Kimi K2.6: open-source coding SOTA'
+  - Claude Opus getting stricter (or just worse on infra)
+  - Simon Willison — more Opus 4.7 token data
+  - Context.ai / Delve self-audit continues
+  - Codex x Sky acquisition — swyx on "real" computer use
+  - Tim Cook out at Apple
+  - 'Matt Pocock — /grill-me viral, Slopwatch build series'
+  - Steipete — CLI releases + the subsidy thesis
+  - Mitchell Hashimoto back on Go
+  - Other things worth a click
+---
 # 2026-04-21 — Lovable's "public" confusion, Codex Side Quests & Kimi K2.6
 
 ## Lovable drama: public projects ≠ data breach

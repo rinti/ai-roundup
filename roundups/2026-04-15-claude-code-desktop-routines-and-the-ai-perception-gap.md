@@ -1,3 +1,18 @@
+---
+title: 'Claude Code Desktop, Routines & the AI Perception Gap'
+date: '2026-04-15'
+summary: >-
+  Claude Code desktop redesign with routines, framework fatigue debate, MiniMax
+  M2.7 local setups, Karpathy on AI capability perception gap
+tags:
+  - Big Releases & Product News
+  - Agentic Coding Discussion
+  - Tools & Open Source
+  - Benchmarks & Research
+  - Videos & Podcasts
+  - Local LLM Corner
+  - Other Notable Mentions
+---
 # AI Roundup — April 15, 2026
 
 ## Big Releases & Product News

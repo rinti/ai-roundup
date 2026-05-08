@@ -1,3 +1,30 @@
+---
+title: 'Claude Code Pricing Fiasco, SpaceX ↔ Cursor & GPT Image-2'
+date: '2026-04-22'
+summary: >-
+  Anthropic botches a 2% A/B test that dropped Claude Code from $20 Pro and hit
+  100% of users before reverting (OpenAI pounces with Codex-on-Plus guarantee),
+  SpaceXAI ↔ Cursor deal with $60B acquisition option or $10B payout, GPT
+  Image-2 ships with LLMJunky's VSCode renders + Simon's ham-radio-raccoon
+  bench, leerob rebuts antirez on frontend in a coding-agents world, Cursor cuts
+  desktop OOMs 80%, Copilot pauses new signups, GPT 5.5 spotted in Codex
+tags:
+  - Anthropic pulls Claude Code from Pro — then un-pulls it
+  - 'SpaceX ↔ Cursor: $60B acquisition option or $10B payout'
+  - GPT Image-2 / "ChatGPT Images 2.0" drops
+  - GPT 5.5 spotted in Codex App
+  - 'leerob vs antirez: frontend development in 2026'
+  - 'Cursor engineering: 80% memory crash reduction'
+  - 'Simon: Opus 4.7 adaptive thinking is a bit broken, also GitHub Copilot'
+  - OpenAI Euphony vs simonw's Codex timeline
+  - 'Matt Pocock — sycophancy, flaky tests, vibe-coding tools'
+  - 'LLMJunky: the "sudo" problem'
+  - 'Steipete: OpenClaw + discrawl ship days'
+  - 'mitsuhiko: XDG considered harmful for dev tools'
+  - 'ParseBench: charts in enterprise documents'
+  - Non-agent sidebar
+  - Open questions going into tomorrow
+---
 # 2026-04-22 — Claude Code pricing fiasco, SpaceX ↔ Cursor, and GPT Image-2
 
 Theo's [vacation summary](https://x.com/theo/status/2046767107178676636) captures the day: "Things that happened 1 month before my vacation: opus 4.7. Things that have happened since I got on the plane: vercel hack, gpt-image-2, claude code removed from pro, cursor might get bought by spacex, kimi k2.6." Most of those landed today.

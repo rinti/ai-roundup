@@ -1,3 +1,14 @@
+---
+title: 'Cal.com Closes Source, Shopify Autoresearch Results, Cursor Canvas'
+date: '2026-04-16'
+summary: >-
+  Cal.com goes closed source sparking debate, Shopify autoresearch shows 300x
+  test speedups, Cursor ships interactive canvases, Sentry's team agent case
+  study
+tags:
+  - Agentic & Code AI
+  - Other Notable AI News
+---
 # Apr 16 Roundup: Cal.com Closes Source, Shopify Autoresearch Results, Cursor Canvas
 
 ## Agentic & Code AI

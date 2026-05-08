@@ -1,3 +1,61 @@
+---
+title: 'Claude Code''s OpenClaw Tax, Cursor Ships an SDK & Zig Goes Anti-AI'
+date: '2026-04-30'
+summary: >-
+  Theo finds that Claude Code refuses or upcharges if your repo has a recent
+  commit mentioning "OpenClaw" in a JSON blob (empty repo, calling CC directly),
+  Sam Altman quote-tweets "alignment failure" and the goodwill-burn discourse
+  goes critical (Patrick Johnson: "your entire business is being held together
+  by regex duct tape"; sharedmutablestate: "from THE company to trust to
+  demolishing user accounts"); same night Theo notes T3 Chat's costs went *down*
+  after disabling Anthropic prompt caching ("the new TTLs are brutal"), with
+  Pierre-Yves Sottiaux's framing it as a margin-vs-experience tradeoff providing
+  the smoking-gun internal narrative; Cursor ships the **Cursor SDK** — same
+  harness/runtime/models that power Cursor, billed against your Cursor sub, with
+  a local-hackable + managed-cloud split (leerob: "can be used for a lot of
+  things", potetotes: "set your agents free", Boaz Hwang: "the underrated part
+  is the harness — once sandboxing/repo-context/demo-output are boring, the
+  model choice gets less dramatic"); Simon Willison writes up Zig's blanket
+  AI-PR ban with the sharpest framing yet — "the quality of the code isn't the
+  deciding factor at all here", it's that **review attention is the rate limit
+  and Zig spends that budget on contributor onramp** (Mehdi Salmani: "Code
+  review isn't a quality gate — it's how jr engs become sr engs"; Pekka Enberg
+  counter: this forced Bun to fork); Matt Pocock open-sources **Sandcastle**, a
+  TypeScript primitive for orchestrating sandboxed coding agents (Claude
+  Code/Codex/Pi), works against any issue tracker via labels; Gergely Orosz
+  ships a 90-min Pi episode with badlogicgames + mitsuhiko surfacing three
+  meta-arguments — AI is killing the senior-engineer "no" because juniors and
+  PMs deploy agent-scripted counterarguments, bespoke harnesses are the future
+  (Pi's whole pitch), and automation bias is the single biggest agent risk;
+  steipete integrates codex `/review` into clawsweeper with automerge that loops
+  until no new issues found ("They find different things, but codex review finds
+  better stuff"); Thariq says CC's big-file-write hang white whale is found and
+  the no-flicker renderer is heading to default; LlamaParse MCP server ships
+  with a URL-based file upload primitive (MCP has none) + WorkOS OAuth + native
+  rate-limiting; Simon ships LLM 0.32a0 refactor for reasoning models; mitsuhiko
+  RTs the "FastCGI is still the better protocol for reverse proxies" 30-year
+  retrospective; swyx's "be me" greentext recap of Talkie ("most confidently
+  racist model ever released by humankind") is the meme of the day; LLMJunky
+  drops the year-out reframe ("today's models will look like o1/Sonnet 3.7 by
+  next year") plus a clean skill tip ("after you run a skill, ask if anything in
+  the skill itself can be made more efficient"); OpenAI publishes Goblins
+  explainer (Theo: "Goblingate is way funnier than I expected"); on AWS-Trainium
+  news Theo dunks with the old "trainium hell" repost.
+tags:
+  - Anthropic having a day
+  - Cursor ships an SDK
+  - >-
+    Zig project bans AI-assisted contributions — and the rationale is sharper
+    than expected
+  - 'Sandcastle: Matt Pocock''s open-source software factory'
+  - >-
+    Pragmatic Engineer x Pi: Mario, Armin & Peter on building with
+    self-modifying agents
+  - 'Steipete: codex /review now lives inside ClawSweeper, with automerge loops'
+  - 'CC bug hunt: Thariq finds the big-file-write hang'
+  - Other notable threads
+  - Off-topic / non-AI
+---
 # 2026-04-30 — Claude Code's OpenClaw Tax, Cursor Ships an SDK & Zig Goes Anti-AI
 
 ## Anthropic having a day

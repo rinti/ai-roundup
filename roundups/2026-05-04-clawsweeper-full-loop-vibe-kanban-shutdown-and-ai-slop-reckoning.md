@@ -1,3 +1,68 @@
+---
+title: >-
+  ClawSweeper Goes Full Loop, Vibe-Kanban Shuts Down Onstage & the AI-Slop
+  Reckoning
+date: '2026-05-04'
+summary: >-
+  Steipete ships ClawSweeper 0.2.0 (issue → fix/build → guarded PR → review →
+  repair → re-review → automerge), Crabbox 0.4.0 (ephemeral macOS/Linux/Windows
+  machines for agents), and RepoBar 0.4.0; the "Anthropic banned OpenClaw 3
+  months ago, now it runs on GPT-5.5 and is the best it's ever been — backfired
+  completely" narrative crystallizes (Mitchmalone: "OpenClaw with Codex 5.5 is
+  insanely good"; Vincent Koc 13-run thread: `/goal` is "not a 'do my ticket'
+  button, it's a constraint workflow"); Sam Altman replies "let's fix this right
+  away, much too low" to a 40M-tokens-per-minute rate-limit complaint within
+  minutes; **Mattpocock's AI-negligence thread** (74K likes) becomes the first
+  wide community thread treating AI slop as a *team* problem (Ryan Fleury: "You
+  fire them"; Nathan Oyler: "people are still learning the shape of AI,
+  gatekeeping is on senior engs and CLAUDE.md"; dexhorthy: "for the sloppers it
+  becomes a perf conversation"; martysaxton: "AI didn't make design go away, it
+  made design harder to locate — code, spec, prompt, tests or review loop?";
+  Steven Gonsalvez: "the new git diff is the agent session, not the code"; Roman
+  Builder: "the 'code is cheap' meme made it socially acceptable");
+  **Vibe-Kanban shuts down live onstage at AIE Europe** at 30K MAU —
+  tokengobbler: "everyone making money is doing 2 things: selling to enterprise,
+  and reselling tokens. We were doing neither" (overfitted_: "if you're not
+  reselling tokens at markup or signing six-figure enterprise PoCs, you're a
+  feature anthropic ships in cursor next quarter"; yue8985: "plan/review is
+  where the leverage moved"); **LLMJunky's two hidden Codex features** —
+  `developer_instructions` (survives compaction, unlike AGENTS files) and
+  `compact_prompt` (steer the pre-compaction model directly) — both in
+  config.toml, both for CLI + Codex App; LLMJunky also ships Codex App for Linux
+  Petsmart Edition + an Apple Watch Codex client + NBA Codex Pets ecosystem;
+  Theo's "official iMessage Claude plugin" satire weaponizes Apple's
+  Claude.ai-account ToS exemption ("§2N and §2I"); mitsuhiko: "AI brings
+  websockets back, really do not like the protocol", ships SSE-fallback PR for
+  pi, recommends iroh; Jerry Liu's "parsing PDFs is hard" returns as an *agent*
+  problem now that agents are the document consumers; Theo's Azure
+  99.9%-cache-miss issue resolved (Azure now FASTER than OpenAI for GPT-5.5);
+  Mattpocock ships /triage skill + new homepage; simonw built a feature on his
+  blog *entirely on his phone* with Claude Code for web; DGX Spark $500 price
+  hike incoming; LLMJunky on 5/5 Codex usage reset: "finna be a token party".
+tags:
+  - 'ClawSweeper 0.2.0: the full issue → PR → review → repair → automerge loop'
+  - 'OpenClaw + Codex 5.5: "the Anthropic ban backfired completely"'
+  - Mattpocock's "AI negligence" thread — the slop reckoning hits the timeline
+  - >-
+    Vibe-Kanban shuts down live onstage at AIE Europe — "everyone making money
+    is doing 2 things"
+  - 'LLMJunky: two hidden Codex features, plus the Codex App for Linux'
+  - >-
+    Theo: "official iMessage Claude plugin" satire (and the actual Apple ↔
+    Anthropic ToS issue)
+  - >-
+    Mitsuhiko: WebSockets are back (thanks to AI), iroh recommendation, SSE
+    fallback PR
+  - >-
+    Jerry Liu: parsing PDFs is still an open problem, and now it's an agent
+    problem
+  - Theo + Azure follow-up (closes out the May 2 story)
+  - Mattpocock's /triage skill — burning through the backlog
+  - 'Simon Willison: built a feature on his blog entirely on his phone'
+  - Misc / shorter
+  - Videos worth watching
+  - News articles
+---
 # 2026-05-04 — ClawSweeper Goes Full Loop, Vibe-Kanban Shuts Down Onstage & the AI-Slop Reckoning
 
 ## ClawSweeper 0.2.0: the full issue → PR → review → repair → automerge loop

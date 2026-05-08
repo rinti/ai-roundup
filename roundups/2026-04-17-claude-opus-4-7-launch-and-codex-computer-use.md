@@ -1,3 +1,15 @@
+---
+title: Claude Opus 4.7 Launch & Codex Computer Use
+date: '2026-04-17'
+summary: >-
+  Opus 4.7 ships with auto mode/xhigh/focus, Codex Desktop adds computer use,
+  Qwen 3.6 beats Opus on pelican bench, ParseBench shows chart gains at 7¢/page,
+  harness-vs-slop split
+tags:
+  - Agentic & Code AI
+  - Odds & Ends
+  - Non-AI / Other
+---
 # Apr 17 Roundup: Claude Opus 4.7 Launches Alongside Codex Computer Use
 
 Anthropic and OpenAI shipped on the same day. Opus 4.7 is the dominant story across every feed, Codex Desktop with computer use is the counter-punch, and a local Qwen model quietly embarrassed both on a creative benchmark.

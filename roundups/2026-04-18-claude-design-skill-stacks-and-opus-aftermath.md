@@ -1,3 +1,14 @@
+---
+title: 'Claude Design, Skill Stacks & Opus 4.7 Aftermath'
+date: '2026-04-18'
+summary: >-
+  Claude Design launches (and eats Theo's files), Matt Pocock publishes full
+  skill lineup + slopwatch observability, LLMJunky ships Codex Linux app, Simon
+  says LLMs now handle legacy code, Endor Labs crowns Cursor most secure harness
+tags:
+  - Agentic & Code AI
+  - Non-AI / Other
+---
 # Apr 18 Roundup: Claude Design Lands, Skill Stacks Harden, Opus 4.7 Settles In
 
 A day after the Opus 4.7 / Codex Desktop double-launch, the conversation splinters: Anthropic Labs ships Claude Design; Matt Pocock publishes a full Claude Code skill lineup; LLMJunky drops a Codex Linux app; and the community starts asking "okay, so what workflow *actually* works with 4.7?"

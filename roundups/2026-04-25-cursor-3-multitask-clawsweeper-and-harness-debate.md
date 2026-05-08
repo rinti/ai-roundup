@@ -1,3 +1,33 @@
+---
+title: 'Cursor 3 /multitask, ClawSweeper Closes 4K Issues & the Harness Debate'
+date: '2026-04-25'
+summary: >-
+  Cursor 3 ships /multitask with async subagents, cross-repo worktrees and
+  per-subagent model selection (and GPT-5.5 hits CursorBench #1 at 72.8% with
+  50% off through May 2); Steipete's ClawSweeper runs 50 Codex agents in
+  parallel and closes ~4,000 OpenClaw issues in a day, with the README as the
+  only dashboard ("readme is the new dashboard"); Matt Pocock pitches
+  types-first file reads (.d.ts → .ts) for harnesses, Quinn Slack from Amp says
+  they tried it and models won't use it; Anthropic's CC post-mortem still
+  drawing community heat (felt-gaslit replies, Theo's victory lap); Mitsuhiko
+  RTs Qwen3.6-27B running in Pi agent on a MacBook Pro "very close to Opus" +
+  Gondolin sandbox now does qemu/krun/wasm; DeepSeek V4 pricing chart (V4-Flash
+  $0.14/$0.28, V4-Pro $1.74/$3.48 vs GPT-5.5 $5/$30) plus Suchen Zhang on
+  training instabilities; Codex Hooks GA + Mobile App + Linux/Fedora ports; swyx
+  thesis: "2025 was coding agents, 2026 is coding agents breaking containment to
+  do everything else"; GitHub merge queue reverting merged commits randomly
+tags:
+  - 'Cursor 3: /multitask, async subagents, cross-repo worktrees'
+  - 'ClawSweeper: 50 Codex agents, 4,000 issues closed, README as dashboard'
+  - 'The harness debate: Matt Pocock proposes types-first reads'
+  - 'Anthropic post-mortem: the dust hasn''t settled'
+  - 'Local models punch up: Qwen3.6-27B on a MacBook Pro'
+  - 'DeepSeek V4 reactions: pelicans, pricing and training instabilities'
+  - 'Codex misc: hooks GA, mobile app, Linux port'
+  - 'swyx''s framing: "coding agents breaking containment"'
+  - Other notes
+  - Off-topic / culture
+---
 # 2026-04-25 — Cursor 3 ships /multitask, ClawSweeper closes 4K issues, and the harness debate keeps simmering
 
 Friday is the quiet aftershock to Thursday's GPT-5.5 / DeepSeek V4 / Claude Code post-mortem combo. The big new ship is Cursor 3 — async subagents, cross-repo worktrees and /multitask — landing right as Steipete points 50 parallel Codex agents at OpenClaw's issue tracker and closes ~4,000 issues in a day. Underneath it all, a quiet but pointed conversation about what harnesses *should* do by default (Matt Pocock: read types first, code later), more pushback on the Anthropic post-mortem, and Armin Ronacher running Qwen3.6-27B locally and calling it "very close to Opus."

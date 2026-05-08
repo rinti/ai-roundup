@@ -1,3 +1,63 @@
+---
+title: >-
+  GitHub Copilot Tokenpocalypse, Bun's Rust Port Hint & Karpathy's Three New
+  Horizons
+date: '2026-05-05'
+summary: >-
+  **Theo's GitHub Copilot exposé** lands the day's biggest agent-economics story
+  — a single message ran ~7 hours, did 60M+ tokens, $221 of inference; 15
+  messages = $221 = 1.6% of his $40 plan, "I'm on pace to do $14,375 of compute
+  on my $40 plan", per-message billing dies June 1st ("It's obvious GitHub
+  couldn't keep this model"); **Bun's Zig→Rust port hint** — Luke Parker spots a
+  commit, Simon Willison finds `docs/PORTING.md` written *for coding agents*,
+  Robobun is the top contributor for months, mitsuhiko: "one clanker is arguing
+  with another clanker… the whole bun repo at this point looks like modern
+  performance art"; **mitsuhiko's "Content for Content's Sake"** — 90 days of
+  coding sessions show medium-frequency words spiking on Google Trends
+  ("substrate", "capability"), "I am increasingly worried that I'm starting to
+  write like an LLM because I just read so much more LLM text", argues Friction
+  & Rate Limiting is the missing primitive; **Karpathy's Sequoia Ascent recap**
+  — three new horizons (menugen / install .md skills / LLM knowledge bases),
+  jaggedness explained via revenue-driven RL data distributions ("either on the
+  rails of the RL circuits and flying or off-roading in the jungle with a
+  machete"), agent-native economy as sensors/actuators/logic decomposition;
+  **Codex 5/5 token party** — OpenAI 10x'd Codex rate limits as a 5/5 gift
+  (LLMJunky's prediction lands); **LLMJunky's macOS-vs-Linux Codex Computer Use
+  challenge** — Codex draws a painting with only mouse moves on macOS, "I'm
+  increasingly becoming macOS pilled because of Codex and Clicky"; **Steipete's
+  Crabbox 0.5.0** — 0.4→0.5 in one day adds desktop/browser leases, VNC +
+  authenticated WebVNC, AWS Windows + WSL2; **Theo's OpenAI ↔ Microsoft breakup
+  explainer video** (pinned, framing Microsoft's AI stack as structurally
+  fragile); swyx's updated AI-lab valuation chart (OAI 850B/30B ARR, Ant
+  ~900B/~44B ARR — both labs ~3x in 9 months); Mattpocock hits **200K YouTube
+  subs** + ships a clean Model/Harness/Environment glossary, RT'd "agent output
+  as compiler output" as the perfect ignore-this-person signal; simonw's
+  **Granite 4.1 3B SVG-pelican gallery** (21 quants, no clean quality-vs-size
+  pattern) + Redis-array WASM playground built on phone via CCfW; Vercel ships
+  **deepsec** (OSS coding-security harness, notably *not* on Vercel AI SDK);
+  Sydney Sweeney open-sources an app she built only with ChatGPT.
+tags:
+  - Theo's GitHub Copilot $221-on-a-$40-plan exposé
+  - Bun's Rust port (?) — coding agents discover the smoking gun
+  - Mitsuhiko's "Content for Content's Sake" — the slop math
+  - >-
+    Karpathy's Sequoia Ascent fireside — three new horizons, jaggedness,
+    agent-native economy
+  - 'Codex 5/5 token party: rate limits 10x''d'
+  - LLMJunky's macOS-vs-Linux Codex Computer Use challenge
+  - 'Steipete: Crabbox 0.5.0 ships with VNC + AWS Windows'
+  - Theo on the OpenAI ↔ Microsoft breakup
+  - swyx — current AI lab valuations & the Plan-and-Review pivot
+  - 'Mattpocock — 200K YouTube subs, vocab thread, AI-as-compiler-output meme RT'
+  - 'Theo''s vesting-cliff vocabulary fight (off-topic, but unavoidable)'
+  - >-
+    simonw — Granite 4.1 quant gallery + Redis arrays playground (built on phone
+    via CCfW)
+  - Misc / shorter
+  - Videos worth watching
+  - News / longer reads
+  - Non-AI / off-topic
+---
 # 2026-05-05 — GitHub Copilot Tokenpocalypse, Bun's Rust Port Hint & Karpathy's Three New Horizons
 
 ## Theo's GitHub Copilot $221-on-a-$40-plan exposé

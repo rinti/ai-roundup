@@ -1,3 +1,34 @@
+---
+title: >-
+  GPT-5.5 Lands, DeepSeek V4 Undercuts Everyone & Claude Code Ships a
+  Post-Mortem
+date: '2026-04-24'
+summary: >-
+  OpenAI ships GPT-5.5 with 400K/1M context, $5/$30 pricing, 82.7%
+  Terminal-Bench and a completely rebuilt Codex app (browser control,
+  Sheets/Slides, Docs/PDFs, OS-wide dictation); Anthropic's Boris Cherny
+  publishes the Claude Code post-mortem — three harness bugs fixed in v2.1.116+,
+  usage limits reset, Opus 4.7 CC issues still open; DeepSeek V4 Preview drops
+  at 9pm PT (1.6T/49B Pro, 284B/13B Flash, 1M context, open weights) at
+  category-cheapest prices; Codex Hooks hit GA with apply_patch payloads; Matt
+  Pocock details Slack-based /triage → /implement DAG flow on Sandcastle +
+  Vercel Chat SDK; `/schedule` lands in Claude Code for one-shot tasks;
+  mitsuhiko's agent backs out of AGPL code mid-install; Jerry Liu ships
+  ParseBench on Kaggle; Google open-sources DESIGN.md spec
+tags:
+  - GPT-5.5 and the Codex app reboot
+  - 'Claude Code post-mortem: the harness drifted, not the model'
+  - 'DeepSeek V4 Preview: 1M context, open weights, price floor reset'
+  - Codex Hooks GA + Matt Pocock's Slack-based agent DAG
+  - /schedule for Claude Code one-shots
+  - ParseBench on Kaggle
+  - 'Cursor and SpaceX: the "are independent AI startups viable?" argument'
+  - Mitsuhiko's AGPL lol
+  - Google Stitch open-sources DESIGN.md
+  - Tencent Hy3-Preview on OpenRouter
+  - Non-agent sidebar
+  - Open questions
+---
 # 2026-04-24 — GPT-5.5 lands, DeepSeek V4 undercuts everyone, and Claude Code ships a post-mortem
 
 A real firehose day. OpenAI dropped GPT-5.5 plus a completely reworked Codex app, Anthropic published a post-mortem on the Claude Code quality slide that's been hovering over the last month, and then — just as Simon Willison was queuing up his Friday newsletter — DeepSeek V4 Preview shipped at prices that make everyone else look expensive. In the background: Codex Hooks going GA, Matt Pocock's Slack-based agent DAG, and Armin Ronacher quietly switching away from Claude Code.

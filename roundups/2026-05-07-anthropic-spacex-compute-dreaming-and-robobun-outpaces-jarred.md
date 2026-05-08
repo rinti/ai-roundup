@@ -1,3 +1,86 @@
+---
+title: 'Anthropic ↔ SpaceX, Dreaming Lands & robobun Outpaces Jarred'
+date: '2026-05-07'
+summary: >-
+  **Anthropic ↔ SpaceX/xAI compute partnership** is the headline of Code with
+  Claude — Colossus 1 access, **220K+ NVIDIA GPUs, 300+ MW within the month**,
+  and the kicker that Anthropic + xAI "have also expressed interest in
+  partnering to develop multiple gigawatts of orbital AI compute capacity"; rate
+  limits respond immediately (5-hour limits doubled for Pro/Max/Team/Enterprise,
+  peak-hour reductions removed for Pro/Max, Opus API rates substantially raised)
+  — peak irony that Elon spent the past year publicly trolling Anthropic as
+  "Misanthropic" (Mike Wojtanowicz: "bro gave the company he calls
+  'Misanthropic' additional compute to spite @sama, have to respect the
+  pettiness"; Patryn23: "Has XAI surrendered? Does Elon know?"; Waterloose's
+  sober ops take: "300MW in four weeks is essentially a mid-sized nuclear
+  reactor's worth of demand on a single site, the math isn't mathing"; Shahid:
+  "the real race isn't model vs model anymore, it's who controls the compute");
+  fine-print catch from MCP/user1508123: only the 5-hour window doubles, weekly
+  quota is unchanged ("same plate of pasta but I'll give you a shovel to eat");
+  Theo's compute-bottleneck explainer (recorded *before* the announcement) ages
+  instantly ("compute was the bottleneck"); **Code with Claude's other big
+  drops** — **Dreaming** in research preview ("reviews your agent's past
+  sessions, extracts patterns, and curates memories so your agents learn over
+  time" — engineer cat: "can Dreaming drop memories that turn out to be wrong,
+  or is it strictly additive?"; Tommaso Rinversi: "the hard part is auditable
+  memory: where a fact came from, when it expires, which run it influenced, how
+  to roll it back"; Guy Braunstain: "the real treasure is the wrong turns, and
+  CC deletes them after 30 days by default"; multiple OpenClaw fork authors
+  claim Anthropic copied their already-shipped "dreaming" feature), **Outcomes**
+  + **Multiagent orchestration** + **webhooks** in public beta, swyx live-tweets
+  bcherny: "**routines are higher order prompts**" / "default is i will now have
+  claude prompt claude code"; **simonw's photogenic moment of the conference**:
+  bcherny + jarredsumner reveal **robobun has now made more contributions to Bun
+  than Jarred has**, and the open Q is whether Jarred reads the bot-vs-bot
+  review chatter on PRs; **Bun Zig→Rust port confirmed experimental, not a
+  switch** (Jarred: "I want to see what a viable side-by-side comparison looks
+  like"); mitsuhiko stares into the abyss reading inference-engine source
+  ("terrible decisions upstream lead to terrible consequences downstream, I hate
+  everything"), and shares the GPT-5.5 codex failure mode: ask "why did you do
+  X?" → "sorry I should not have done that" and changes everything;
+  **Mattpocock's /grill-me writes a eulogy for someone's mother** and Pocock now
+  wonders if "skills for life/work productivity" is a course ("turning HITL
+  tasks into AFK ones, creating a working language with the agent"), ships
+  **/handoff** (new daily workflow: /grill-with-docs → /handoff to /prototype →
+  /to-prd → /to-issues → npm run sandcastle → /improve-codebase-architecture),
+  AFK QA realization: "you're not just QA-ing the code, you're QA-ing the agent
+  itself, fixes must land in both in the same commit"; **Cursor 3.3** ships
+  dynamic context for all models (**46.9% token reduction** with multiple MCP
+  servers) + per-source context-usage breakdown UI ("rules, skills, MCPs, and
+  subagents all look harmless alone until one source quietly eats the window");
+  **Steipete ships fs-safe** as a standalone primitive ("stop treating string
+  normalization as a filesystem boundary, use a root handle"), CodexBar 0.24
+  with Windsurf/Codebuff/DeepSeek providers, the 10-CLI lobster army
+  (sonoscli/wacli/birdclaw/gitcrawl/discrawl/spogo/imsg/mcporter/sag/askoracle),
+  framing of the day: "closed source, open source, nothing can stop codex";
+  Jerry Liu's **"AI can't read PDFs, how do we fix it"** AI Dev '26 deck goes
+  public + LlamaParse Mobile ships (iOS+Android Expo/RN); Eugene Yan's "context
+  as infra, taste as config, verification for autonomy" essay slots cleanly into
+  the Dreaming/async-agents framing; **Cofounder 2** ("run an entire company
+  with agents", grandma video) launches; Wes Bos's `pnpm supercut "by the way"
+  --bucket @ThePrimeagen` CLI tool finds video moments by phrase; **Chrome ships
+  its Prompt API over Mozilla/WebKit/W3C-TAG opposition** (Theo: "this is them
+  doing the opposite of pushing web standards forward, I dislike this");
+  BlackRock's Larry Fink predicts a compute-futures market; karpathy silent for
+  the day.
+tags:
+  - >-
+    Anthropic ↔ SpaceX: Colossus 1 goes Claude, "multi-gigawatt orbital compute"
+    on the table
+  - 'Code with Claude: Dreaming, Outcomes, Multiagent Orchestration ship'
+  - robobun has now made more contributions to Bun than Jarred himself
+  - >-
+    Mattpocock: /grill-me writes a eulogy, /handoff ships, "skills for life"
+    course teased
+  - 'Cursor 3.3: dynamic context for all models, context-usage breakdown UI'
+  - 'Steipete: OpenClaw army keeps growing, fs-safe ships'
+  - >-
+    Mitsuhiko on GPT-5.5 codex: "Why did you do X?" → "Sorry I should not have
+    done that"
+  - 'Jerry Liu: "AI can''t read PDFs" deck + LlamaParse Mobile'
+  - Smaller items worth reading
+  - Outside the agent/code beat
+---
 # 2026-05-07 — Anthropic ↔ SpaceX, Dreaming Lands & robobun Outpaces Jarred
 
 ## Anthropic ↔ SpaceX: Colossus 1 goes Claude, "multi-gigawatt orbital compute" on the table

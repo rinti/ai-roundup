@@ -1,3 +1,52 @@
+---
+title: 'Codex Eats ChatGPT, Frameworks Are Dead & Claude Code Commit-Message Leaks'
+date: '2026-05-02'
+summary: >-
+  swyx uninstalls the ChatGPT app ("codex is strict superset now") and notes
+  Grok 4.30 is highest intelligence-per-dollar on AAI; "coding agents breaking
+  containment" is reframed as the 2026 thesis (Soroush Fadaeimanesh: "the
+  harness is the AGI delivery vehicle, not the model"; Ghali Bennis: "had Claude
+  reconcile 3 months of stripe payouts vs shopify, took 20 min"; Crepe Supreme
+  counter: knowledge work has no CI-equivalent; BlockView: "the AGI-pilled
+  moment of 2026 is an OAuth consent screen, not a benchmark"); LLMJunky flags
+  Codex now imports settings/projects/plugins from Claude Code (migration
+  tooling, basically) and ships Codex on Linux; steipete endorses Codex `/goal`
+  and switches OpenClaw's recommended GPT path to the Codex harness; **Theo's
+  pinned "be careful what you put in your Claude Code commit messages" video**
+  (37K likes) drives a thread on the new prompt-injection attack surface
+  (TFisPython: "git status alone bleeds ~200 tokens every run, your commit
+  message is in the system prompt from session start"; Septim Labs: "API keys
+  leaked via /commit-via-claude three times in 30 days"; Boaz Hwang: "anything
+  the coding agent can read is prompt surface"); Theo gets Azure to ship a 10x
+  latency improvement for GPT-5.5 ("kind of insane that Azure wasn't monitoring
+  this internally"); Mattpocock publishes the **Dictionary of AI Coding** —
+  clean Model/Harness/Environment/Agent definitions; Fred Schott launches
+  **Flue** — TypeScript Agent Harness Framework, "Claude Code but 100% headless
+  and programmable"; steipete's Crabbox 0.1.0 — remote Linux test boxes for
+  agent fleets (Sankalp: "the laptop fan finally getting quiet again is the
+  unsung devops win of the agent era"); Jerry Liu's VentureBeat profile lands
+  the **"framework era is dead, context is the moat"** thesis (Winston B.:
+  "infra-monetization window narrowed faster than anyone budgeted");
+  Mattpocock's "writing code is cheap, maintaining code is not" thesis lands;
+  mitsuhiko quote-tweets Guido van Rossum on phone-managed agents ("don't use
+  it, you'll just burn out quicker").
+tags:
+  - '"Coding agents breaking containment" — Codex as the everything-app'
+  - 'Claude Code: commit messages are now a context-leak attack surface'
+  - >-
+    Theo: Azure-hosted GPT got 10x faster, "Azure wasn't monitoring this
+    internally"
+  - >-
+    Mattpocock's "Dictionary of AI Coding" — clean definitions of Model /
+    Harness / Environment / Agent
+  - 'Flue: a TypeScript Agent Harness Framework (Fred K. Schott)'
+  - 'Steipete: Crabbox 0.1.0 — remote Linux test boxes for agent fleets'
+  - 'Jerry Liu (LlamaIndex): "the scaffolding era is over, context is the moat"'
+  - 'Mattpocock: "Writing code is cheap, maintaining code is not"'
+  - 'Mitsuhiko: clanker upgrade fail, Pi.dev 404, Guido lost to phone-agents'
+  - Misc / shorter
+  - Videos worth watching
+---
 # 2026-05-02 — Codex Eats ChatGPT, Frameworks Are Dead & Claude Code Commit-Message Leaks
 
 ## "Coding agents breaking containment" — Codex as the everything-app
