@@ -54,7 +54,7 @@ The file MUST start with a YAML front matter block. Example:
 ```yaml
 ---
 title: "Anthropic ↔ SpaceX, Dreaming Lands & robobun Outpaces Jarred"
-date: 2026-05-07
+date: "2026-05-07"
 summary: "One paragraph (can be long) summarizing the dispatch — used as the kicker on the issue page and as the entry summary on the archive index. Markdown emphasis (**bold**, *italic*) is fine."
 tags:
   - Agentic Coding & Agent Harnesses
@@ -63,7 +63,7 @@ tags:
 ```
 
 - `title` — the human title (no leading date).
-- `date` — ISO date matching the filename.
+- `date` — ISO date matching the filename. **Must be a quoted string** (`"2026-05-07"`), not unquoted — unquoted YAML dates get parsed as Date objects by the build script.
 - `summary` — the kicker / index summary. The same kind of rich one-paragraph summary that previously went in the README's third column.
 - `tags` — the H2 section names you'll use in the body. Keep them aligned with the section headings.
 

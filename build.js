@@ -96,10 +96,15 @@ function loadIssues() {
     const parsed = matter(raw);
     const data = parsed.data || {};
     const slug = file.replace(/\.md$/, "");
+    // gray-matter parses unquoted YAML dates as Date objects; normalize to YYYY-MM-DD string.
+    const rawDate = data.date;
+    const date = rawDate instanceof Date
+      ? rawDate.toISOString().slice(0, 10)
+      : String(rawDate || slug.slice(0, 10));
     return {
       file,
       slug,
-      date: data.date || slug.slice(0, 10),
+      date,
       title: data.title || slug,
       summary: data.summary || "",
       tags: Array.isArray(data.tags) ? data.tags : [],
