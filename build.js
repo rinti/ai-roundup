@@ -6,6 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
 import { Marked } from "marked";
+import { minify } from "html-minifier-terser";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = __dirname;
@@ -312,7 +313,19 @@ function copyDir(src, dst) {
   }
 }
 
-function build() {
+const minifyOpts = {
+  collapseWhitespace: true,
+  conservativeCollapse: true, // preserve a single space between inline text — avoids gluing adjacent <a>/<span> together
+  removeComments: true,
+  removeRedundantAttributes: true,
+  useShortDoctype: true,
+  minifyCSS: true,
+  minifyJS: true,
+};
+
+const minifyHtml = (html) => minify(html, minifyOpts);
+
+async function build() {
   const issues = loadIssues();
   if (issues.length === 0) {
     console.error("No issues found in roundups/.");
@@ -323,7 +336,7 @@ function build() {
   fs.mkdirSync(issuesDir, { recursive: true });
   copyDir(assetsDir, path.join(outDir, "assets"));
 
-  fs.writeFileSync(path.join(outDir, "index.html"), renderIndex(issues), "utf8");
+  fs.writeFileSync(path.join(outDir, "index.html"), await minifyHtml(renderIndex(issues)), "utf8");
 
   // Issues sorted newest-first; prev = older issue, next = newer issue.
   for (let i = 0; i < issues.length; i++) {
@@ -332,7 +345,7 @@ function build() {
     const older = i < issues.length - 1 ? issues[i + 1] : null;
     fs.writeFileSync(
       path.join(issuesDir, `${iss.slug}.html`),
-      renderIssue(iss, older, newer),
+      await minifyHtml(renderIssue(iss, older, newer)),
       "utf8",
     );
   }
