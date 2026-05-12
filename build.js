@@ -17,6 +17,13 @@ const issuesDir = path.join(outDir, "issues");
 const SITE_TITLE = "AI Roundup";
 const SITE_TAGLINE = "Daily dispatches from AI's coding frontier.";
 
+// Inlined into every page so the critical CSS arrives with the HTML —
+// avoids a render-blocking <link rel="stylesheet"> round-trip.
+const inlineStyles = fs.readFileSync(path.join(assetsDir, "styles.css"), "utf8");
+
+const FONTS_CSS_URL =
+  "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..800,30..100&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap";
+
 // ---------- helpers ----------
 
 const escapeHtml = (s) =>
@@ -118,7 +125,7 @@ function loadIssues() {
 
 // ---------- templates ----------
 
-const baseHead = (title, description, isIssue) => `
+const baseHead = (title, description) => `
 <!doctype html>
 <html lang="en">
 <head>
@@ -129,8 +136,10 @@ const baseHead = (title, description, isIssue) => `
 <meta name="description" content="${escapeHtml(description)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..800,30..100&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${isIssue ? "../assets/styles.css" : "assets/styles.css"}">
+<link rel="preload" as="style" href="${FONTS_CSS_URL}">
+<link rel="stylesheet" href="${FONTS_CSS_URL}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="${FONTS_CSS_URL}"></noscript>
+<style>${inlineStyles}</style>
 </head>`;
 
 function renderIndex(issues) {
@@ -155,7 +164,7 @@ function renderIndex(issues) {
     })
     .join("\n");
 
-  return `${baseHead(SITE_TITLE, SITE_TAGLINE, false)}
+  return `${baseHead(SITE_TITLE, SITE_TAGLINE)}
 <body class="page-index">
 <div class="grain" aria-hidden="true"></div>
 <header class="masthead">
@@ -208,7 +217,7 @@ function renderIssue(iss, prev, next) {
     ? `<a class="pn-next" href="${next.slug}.html"><span class="pn-label">Next dispatch</span><span class="pn-arrow">→</span><span class="pn-title">${escapeHtml(next.title)}</span></a>`
     : `<span class="pn-empty"></span>`;
 
-  return `${baseHead(`${iss.title} — ${SITE_TITLE}`, iss.summary.slice(0, 200), true)}
+  return `${baseHead(`${iss.title} — ${SITE_TITLE}`, iss.summary.slice(0, 200))}
 <body class="page-issue">
 <div class="grain" aria-hidden="true"></div>
 
