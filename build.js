@@ -20,10 +20,10 @@ const SITE_TAGLINE = "Daily dispatches from AI's coding frontier.";
 
 // Inlined into every page so the critical CSS arrives with the HTML —
 // avoids a render-blocking <link rel="stylesheet"> round-trip.
-const inlineStyles = fs.readFileSync(path.join(assetsDir, "styles.css"), "utf8");
+const stylesTemplate = fs.readFileSync(path.join(assetsDir, "styles.css"), "utf8");
 
-const FONTS_CSS_URL =
-  "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..800,30..100&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap";
+const renderStyles = (assetsPrefix) =>
+  stylesTemplate.replaceAll("__FONTS_BASE__", `${assetsPrefix}fonts`);
 
 // ---------- helpers ----------
 
@@ -126,7 +126,7 @@ function loadIssues() {
 
 // ---------- templates ----------
 
-const baseHead = (title, description) => `
+const baseHead = (title, description, assetsPrefix) => `
 <!doctype html>
 <html lang="en">
 <head>
@@ -135,12 +135,10 @@ const baseHead = (title, description) => `
 <meta name="color-scheme" content="dark">
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeHtml(description)}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="${FONTS_CSS_URL}">
-<link rel="stylesheet" href="${FONTS_CSS_URL}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="${FONTS_CSS_URL}"></noscript>
-<style>${inlineStyles}</style>
+<link rel="preload" href="${assetsPrefix}fonts/fraunces-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="${assetsPrefix}fonts/fraunces-standard-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="${assetsPrefix}fonts/ibm-plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>${renderStyles(assetsPrefix)}</style>
 </head>`;
 
 function renderIndex(issues) {
@@ -165,7 +163,7 @@ function renderIndex(issues) {
     })
     .join("\n");
 
-  return `${baseHead(SITE_TITLE, SITE_TAGLINE)}
+  return `${baseHead(SITE_TITLE, SITE_TAGLINE, "assets/")}
 <body class="page-index">
 <div class="grain" aria-hidden="true"></div>
 <header class="masthead">
@@ -218,7 +216,7 @@ function renderIssue(iss, prev, next) {
     ? `<a class="pn-next" href="${next.slug}.html"><span class="pn-label">Next dispatch</span><span class="pn-arrow">→</span><span class="pn-title">${escapeHtml(next.title)}</span></a>`
     : `<span class="pn-empty"></span>`;
 
-  return `${baseHead(`${iss.title} — ${SITE_TITLE}`, iss.summary.slice(0, 200))}
+  return `${baseHead(`${iss.title} — ${SITE_TITLE}`, iss.summary.slice(0, 200), "../assets/")}
 <body class="page-issue">
 <div class="grain" aria-hidden="true"></div>
 

@@ -2,6 +2,50 @@
    Type: Fraunces (display, variable opsz/SOFT/wght), IBM Plex Sans (body), IBM Plex Mono (metadata).
    Palette: deep navy ground, mid navy rails, cream paper type, warm gold accent. */
 
+/* __FONTS_BASE__ is substituted by build.js with the right relative prefix per page depth. */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("__FONTS_BASE__/fraunces-standard-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("__FONTS_BASE__/fraunces-standard-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__FONTS_BASE__/ibm-plex-sans-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("__FONTS_BASE__/ibm-plex-sans-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("__FONTS_BASE__/ibm-plex-mono-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("__FONTS_BASE__/ibm-plex-mono-500.woff2") format("woff2");
+}
+
 :root {
   --navy-deep: #0a1628;
   --navy-mid:  #142340;
