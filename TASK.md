@@ -26,17 +26,25 @@ Use `curl` via Bash to fetch RSS feeds in parallel for all accounts. The RSS end
 curl -s -L -A "Mozilla/5.0" "https://nitter.net/karpathy/rss"
 ```
 
-This returns XML with recent posts, quoted tweets, and the author's own thread replies. WebFetch and direct HTML pages on nitter return empty content — only RSS and browser automation work.
+This returns XML with recent posts, quoted tweets, and the author's own thread replies. WebFetch and direct `curl` requests for Nitter status pages often return empty content; use RSS for account scans and the helper below for thread pages.
 
-### Step 2: Get thread discussions via Chrome browser
+### Step 2: Get thread discussions via the Nitter helper
 
-RSS only gives posts by the account owner. To see replies and discussions from other people, use Chrome browser automation (mcp__claude-in-chrome tools) to load individual thread pages on nitter:
+RSS only gives posts by the account owner. To see replies and discussions from other people, use the local helper script to fetch server-rendered Nitter thread HTML with Safari TLS impersonation:
 
-1. Call `tabs_context_mcp` to get/create a tab
-2. Navigate to the thread URL, e.g. `https://nitter.net/karpathy/status/2042334451611693415`
-3. Call `get_page_text` to extract the full thread with all replies
+```
+python3 scripts/fetch-nitter-thread.py "https://nitter.net/karpathy/status/2042334451611693415"
+```
+
+The helper prints the main post, visible replies, stats, x.com links, and a `Load more:` URL when Nitter has additional reply pages. For unusually important threads, fetch one extra page:
+
+```
+python3 scripts/fetch-nitter-thread.py --pages 2 "https://nitter.net/karpathy/status/2042334451611693415"
+```
 
 Do this for threads that look interesting/high-engagement based on the RSS data. Focus on threads with substantive discussion, not just hype replies.
+
+Do not use Chrome MCP for thread reading. Direct `curl` of Nitter status pages often returns an empty 200 response; use the helper instead.
 
 ### Link format
 
