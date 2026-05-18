@@ -84,9 +84,18 @@ function makeRenderer(toc) {
   return marked;
 }
 
-// Render a short snippet of inline markdown (used for summaries on index + kicker on issue page).
-const inlineMd = new Marked({ gfm: true });
-const renderInline = (s) => inlineMd.parseInline(String(s || ""));
+// Render the summary on the index. Links are flattened to their text because the
+// whole card is wrapped in <a class="entry-link"> and nested anchors get auto-unnested
+// by the HTML parser (yanking the body out of the card and shattering the grid).
+const summaryMd = new Marked({ gfm: true });
+summaryMd.use({
+  renderer: {
+    link({ tokens }) {
+      return this.parser.parseInline(tokens);
+    },
+  },
+});
+const renderSummary = (s) => summaryMd.parseInline(String(s || ""));
 
 const truncateAtBoundary = (s, max) => {
   if (s.length <= max) return s;
@@ -145,7 +154,7 @@ function renderIndex(issues) {
   const rows = issues
     .map((iss) => {
       const g = formatDateGlyph(iss.date);
-      const summarySnippet = renderInline(truncateAtBoundary(iss.summary, 280));
+      const summarySnippet = renderSummary(truncateAtBoundary(iss.summary, 280));
       return `
 <article class="entry">
   <a class="entry-link" href="issues/${iss.slug}.html">
