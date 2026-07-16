@@ -15,6 +15,7 @@ https://nitter.net/karpathy/
 https://nitter.net/jerryjliu0/
 https://nitter.net/potetotes/
 https://nitter.net/leerob/
+https://nitter.net/thsottiaux/
 
 ## How to fetch data
 
