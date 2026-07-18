@@ -415,10 +415,7 @@ a.external:hover,
     gap: 1rem;
   }
   .issue-layout > .toc {
-    position: static;
-    grid-column: 1;
-    max-height: none;
-    margin: 0 0 1.5rem;
+    display: none;
   }
   .issue-layout > .issue-body {
     grid-column: 1;
