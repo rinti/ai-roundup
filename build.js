@@ -105,6 +105,21 @@ const truncateAtBoundary = (s, max) => {
   return (lastBreak > max * 0.6 ? slice.slice(0, lastBreak + 1) : slice) + "…";
 };
 
+// Flatten markdown to plain text for meta descriptions and feed summaries.
+const stripMarkdown = (s) =>
+  String(s || "")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1") // [text](url) → text
+    .replace(/(\*\*|__)(.*?)\1/g, "$2")
+    .replace(/(\*|_)(.*?)\1/g, "$2")
+    .replace(/`([^`]*)`/g, "$1")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const metaDescription = (summary, max = 160) => truncateAtBoundary(stripMarkdown(summary), max);
+
+// RFC 822 date for RSS (issues carry no time of day; publish time is 06:00 UTC by convention).
+const rfc822 = (iso) => new Date(`${iso}T06:00:00Z`).toUTCString();
+
 // ---------- gather ----------
 
 function loadIssues() {
@@ -136,7 +151,7 @@ function loadIssues() {
 
 // ---------- templates ----------
 
-const baseHead = (title, description, assetsPrefix, canonicalPath) => `
+const baseHead = ({ title, description, assetsPrefix, canonicalPath, ogType = "website", publishedDate, jsonLd }) => `
 <!doctype html>
 <html lang="en">
 <head>
@@ -146,6 +161,19 @@ const baseHead = (title, description, assetsPrefix, canonicalPath) => `
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeHtml(description)}">
 <link rel="canonical" href="${SITE_URL}${canonicalPath}">
+<link rel="icon" href="${assetsPrefix}favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="${SITE_TITLE}" href="${SITE_URL}/feed.xml">
+<meta property="og:site_name" content="${SITE_TITLE}">
+<meta property="og:type" content="${ogType}">
+<meta property="og:title" content="${escapeHtml(title)}">
+<meta property="og:description" content="${escapeHtml(description)}">
+<meta property="og:url" content="${SITE_URL}${canonicalPath}">
+<meta property="og:image" content="${SITE_URL}/assets/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">${publishedDate ? `
+<meta property="article:published_time" content="${publishedDate}">` : ""}${jsonLd ? `
+<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` : ""}
 <link rel="preload" href="${assetsPrefix}fonts/fraunces-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="${assetsPrefix}fonts/fraunces-standard-italic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="${assetsPrefix}fonts/ibm-plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -174,7 +202,21 @@ function renderIndex(issues) {
     })
     .join("\n");
 
-  return `${baseHead(SITE_TITLE, SITE_TAGLINE, "assets/", "/")}
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_TITLE,
+    description: SITE_TAGLINE,
+    url: `${SITE_URL}/`,
+  };
+
+  return `${baseHead({
+    title: `${SITE_TITLE} — ${SITE_TAGLINE.replace(/\.$/, "")}`,
+    description: SITE_TAGLINE,
+    assetsPrefix: "assets/",
+    canonicalPath: "/",
+    jsonLd,
+  })}
 <body class="page-index">
 <div class="grain" aria-hidden="true"></div>
 <header class="masthead">
@@ -197,7 +239,7 @@ function renderIndex(issues) {
 </main>
 
 <footer class="site-foot">
-  <p>Compiled daily by an unattended agent. Source on <a class="external" href="https://github.com/rinti/ai-roundup" target="_blank" rel="noopener">GitHub<span class="ext-mark" aria-hidden="true">↗</span></a>.</p>
+  <p>Compiled daily by an unattended agent. Source on <a class="external" href="https://github.com/rinti/ai-roundup" target="_blank" rel="noopener">GitHub<span class="ext-mark" aria-hidden="true">↗</span></a>. Subscribe via <a href="feed.xml">RSS</a>.</p>
 </footer>
 </body>
 </html>
@@ -227,7 +269,28 @@ function renderIssue(iss, prev, next) {
     ? `<a class="pn-next" href="${next.slug}.html"><span class="pn-label">Next dispatch</span><span class="pn-arrow">→</span><span class="pn-title">${escapeHtml(next.title)}</span></a>`
     : `<span class="pn-empty"></span>`;
 
-  return `${baseHead(`${iss.title} — ${SITE_TITLE}`, iss.summary.slice(0, 200), "../assets/", `/issues/${iss.slug}.html`)}
+  const description = metaDescription(iss.summary);
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: iss.title,
+    description,
+    datePublished: iss.date,
+    url: `${SITE_URL}/issues/${iss.slug}.html`,
+    image: `${SITE_URL}/assets/og-card.png`,
+    author: { "@type": "Organization", name: SITE_TITLE, url: `${SITE_URL}/` },
+    publisher: { "@type": "Organization", name: SITE_TITLE, url: `${SITE_URL}/` },
+  };
+
+  return `${baseHead({
+    title: `${iss.title} — ${SITE_TITLE}`,
+    description,
+    assetsPrefix: "../assets/",
+    canonicalPath: `/issues/${iss.slug}.html`,
+    ogType: "article",
+    publishedDate: iss.date,
+    jsonLd,
+  })}
 <body class="page-issue">
 <div class="grain" aria-hidden="true"></div>
 
@@ -309,6 +372,59 @@ ${tocHtml ? `<script>
 `;
 }
 
+const feedMd = new Marked({ gfm: true });
+
+function renderFeed(issues) {
+  const items = issues.slice(0, 20).map((iss) => {
+    const url = `${SITE_URL}/issues/${iss.slug}.html`;
+    // Summary rendered to inline HTML (links kept), then XML-escaped for the description element.
+    const descriptionHtml = feedMd.parseInline(String(iss.summary || ""));
+    return `    <item>
+      <title>${escapeHtml(iss.title)}</title>
+      <link>${url}</link>
+      <guid isPermaLink="true">${url}</guid>
+      <pubDate>${rfc822(iss.date)}</pubDate>
+      <description>${escapeHtml(descriptionHtml)}</description>
+    </item>`;
+  });
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${escapeHtml(SITE_TITLE)}</title>
+    <link>${SITE_URL}/</link>
+    <description>${escapeHtml(SITE_TAGLINE)}</description>
+    <language>en</language>
+    <lastBuildDate>${rfc822(issues[0]?.date)}</lastBuildDate>
+    <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
+${items.join("\n")}
+  </channel>
+</rss>
+`;
+}
+
+function render404() {
+  // GH Pages serves 404.html for missing paths at any depth, so asset URLs must be absolute.
+  return `${baseHead({
+    title: `Page not found — ${SITE_TITLE}`,
+    description: SITE_TAGLINE,
+    assetsPrefix: "/assets/",
+    canonicalPath: "/404.html",
+  })}
+<body class="page-index">
+<div class="grain" aria-hidden="true"></div>
+<header class="masthead">
+  <div class="masthead-rule"></div>
+  <h1 class="wordmark">404</h1>
+  <p class="tagline">This dispatch doesn't exist — or was never filed.</p>
+  <p class="meta-line"><a class="back-link" href="/"><span aria-hidden="true">←</span> Back to the archive</a></p>
+  <div class="masthead-rule"></div>
+</header>
+</body>
+</html>
+`;
+}
+
 function renderSitemap(issues) {
   const urls = [
     { loc: `${SITE_URL}/`, lastmod: issues[0]?.date },
@@ -378,6 +494,8 @@ async function build() {
   }
 
   fs.writeFileSync(path.join(outDir, "sitemap.xml"), renderSitemap(issues), "utf8");
+  fs.writeFileSync(path.join(outDir, "feed.xml"), renderFeed(issues), "utf8");
+  fs.writeFileSync(path.join(outDir, "404.html"), await minifyHtml(render404()), "utf8");
   fs.writeFileSync(path.join(outDir, "robots.txt"), ROBOTS_TXT, "utf8");
 
   // Tiny .nojekyll marker so GH Pages doesn't try to Jekyll-process the output.

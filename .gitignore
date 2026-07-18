@@ -1,5 +1,5 @@
 node_modules/
-docs/
+!docs/
 .roundup-python/
 __pycache__/
 *.log
