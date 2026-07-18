@@ -17,6 +17,7 @@ const issuesDir = path.join(outDir, "issues");
 
 const SITE_TITLE = "AI Roundup";
 const SITE_TAGLINE = "Daily dispatches from AI's coding frontier.";
+const SITE_URL = "https://ai-roundup.rinti.se";
 
 // Inlined into every page so the critical CSS arrives with the HTML —
 // avoids a render-blocking <link rel="stylesheet"> round-trip.
@@ -135,7 +136,7 @@ function loadIssues() {
 
 // ---------- templates ----------
 
-const baseHead = (title, description, assetsPrefix) => `
+const baseHead = (title, description, assetsPrefix, canonicalPath) => `
 <!doctype html>
 <html lang="en">
 <head>
@@ -144,6 +145,7 @@ const baseHead = (title, description, assetsPrefix) => `
 <meta name="color-scheme" content="dark">
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeHtml(description)}">
+<link rel="canonical" href="${SITE_URL}${canonicalPath}">
 <link rel="preload" href="${assetsPrefix}fonts/fraunces-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="${assetsPrefix}fonts/fraunces-standard-italic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="${assetsPrefix}fonts/ibm-plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -172,7 +174,7 @@ function renderIndex(issues) {
     })
     .join("\n");
 
-  return `${baseHead(SITE_TITLE, SITE_TAGLINE, "assets/")}
+  return `${baseHead(SITE_TITLE, SITE_TAGLINE, "assets/", "/")}
 <body class="page-index">
 <div class="grain" aria-hidden="true"></div>
 <header class="masthead">
@@ -225,7 +227,7 @@ function renderIssue(iss, prev, next) {
     ? `<a class="pn-next" href="${next.slug}.html"><span class="pn-label">Next dispatch</span><span class="pn-arrow">→</span><span class="pn-title">${escapeHtml(next.title)}</span></a>`
     : `<span class="pn-empty"></span>`;
 
-  return `${baseHead(`${iss.title} — ${SITE_TITLE}`, iss.summary.slice(0, 200), "../assets/")}
+  return `${baseHead(`${iss.title} — ${SITE_TITLE}`, iss.summary.slice(0, 200), "../assets/", `/issues/${iss.slug}.html`)}
 <body class="page-issue">
 <div class="grain" aria-hidden="true"></div>
 
@@ -307,6 +309,24 @@ ${tocHtml ? `<script>
 `;
 }
 
+function renderSitemap(issues) {
+  const urls = [
+    { loc: `${SITE_URL}/`, lastmod: issues[0]?.date },
+    ...issues.map((iss) => ({ loc: `${SITE_URL}/issues/${iss.slug}.html`, lastmod: iss.date })),
+  ];
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.map((u) => `  <url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod></url>`).join("\n")}
+</urlset>
+`;
+}
+
+const ROBOTS_TXT = `User-agent: *
+Allow: /
+
+Sitemap: ${SITE_URL}/sitemap.xml
+`;
+
 // ---------- io ----------
 
 function copyDir(src, dst) {
@@ -356,6 +376,9 @@ async function build() {
       "utf8",
     );
   }
+
+  fs.writeFileSync(path.join(outDir, "sitemap.xml"), renderSitemap(issues), "utf8");
+  fs.writeFileSync(path.join(outDir, "robots.txt"), ROBOTS_TXT, "utf8");
 
   // Tiny .nojekyll marker so GH Pages doesn't try to Jekyll-process the output.
   fs.writeFileSync(path.join(outDir, ".nojekyll"), "", "utf8");
