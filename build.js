@@ -49,12 +49,6 @@ const formatDateGlyph = (iso) => {
   return { month: months[Number(m) - 1], day: d, year: y };
 };
 
-const formatDateLong = (iso) => {
-  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const [y, m, d] = iso.split("-");
-  return `${months[Number(m) - 1]} ${Number(d)}, ${y}`;
-};
-
 // Marked renderer: external links open in new tab + carry an arrow glyph; collect H2s for the TOC.
 function makeRenderer(toc) {
   const marked = new Marked({ gfm: true, breaks: false });
@@ -226,7 +220,7 @@ function renderIndex(issues) {
   <p class="meta-line">
     <span class="meta-issue">№ ${issues.length}</span>
     <span class="meta-sep">·</span>
-    <span class="meta-latest">Latest dispatch · ${formatDateLong(issues[0]?.date || "")}</span>
+    <a class="external" href="https://github.com/rinti/ai-roundup" target="_blank" rel="noopener">Source on GitHub<span class="ext-mark" aria-hidden="true">↗</span></a>
   </p>
   <div class="masthead-rule"></div>
 </header>
