@@ -295,7 +295,7 @@ function renderIssue(iss, prev, next) {
 <div class="grain" aria-hidden="true"></div>
 
 <nav class="topbar">
-  <a class="back-link" href="../index.html"><span aria-hidden="true">←</span> Back to archive</a>
+  <a class="back-link" href="/"><span aria-hidden="true">←</span> Back to archive</a>
   <span class="topbar-mark">AI Roundup</span>
 </nav>
 
@@ -323,7 +323,7 @@ function renderIssue(iss, prev, next) {
 </nav>
 
 <footer class="site-foot">
-  <p><a class="back-link" href="../index.html"><span aria-hidden="true">←</span> Back to archive</a></p>
+  <p><a class="back-link" href="/"><span aria-hidden="true">←</span> Back to archive</a></p>
 </footer>
 ${tocHtml ? `<script>
 (function(){
