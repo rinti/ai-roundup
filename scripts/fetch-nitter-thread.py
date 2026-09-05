@@ -9,6 +9,7 @@ which curl_cffi can impersonate without browser automation.
 from __future__ import annotations
 
 import argparse
+import os
 import json
 import re
 import sys
@@ -33,7 +34,8 @@ except ImportError:
     )
 
 
-NITTER_BASE = "https://nitter.net"
+NITTER_BASE = os.environ.get("NITTER_BASE", "https://nitter.net").rstrip("/")
+NITTER_HOST = urlparse(NITTER_BASE).netloc
 VOID_TAGS = {
     "area",
     "base",
@@ -153,10 +155,10 @@ def normalize_nitter_url(url: str) -> str:
     parsed = urlparse(url)
     host = parsed.netloc.lower()
     if host in {"x.com", "twitter.com", "mobile.twitter.com"}:
-        return urlunparse(("https", "nitter.net", parsed.path, "", parsed.query, parsed.fragment))
-    if "nitter" not in host:
-        raise ValueError(f"Expected a nitter.net or x.com status URL, got: {url}")
-    return urlunparse(("https", "nitter.net", parsed.path, "", parsed.query, parsed.fragment))
+        return urlunparse(("https", NITTER_HOST, parsed.path, "", parsed.query, parsed.fragment))
+    if "nitter" not in host and host != NITTER_HOST:
+        raise ValueError(f"Expected a nitter or x.com status URL, got: {url}")
+    return urlunparse(("https", NITTER_HOST, parsed.path, "", parsed.query, parsed.fragment))
 
 
 def to_x_url(href: str, fallback_url: str) -> str:
