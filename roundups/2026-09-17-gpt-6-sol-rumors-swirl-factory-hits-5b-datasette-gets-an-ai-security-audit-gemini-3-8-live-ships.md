@@ -51,7 +51,13 @@ A Wednesday dominated by GPT-6 Sol speculation, a coding-agent startup tripling 
 
 **Thariq on MCP > CLI.** Yesterday's [big thread](https://x.com/trq212/status/2099958388230873165) is still generating replies. Thariq also [recorded](https://x.com/trq212/status/2099671266068496802) a Latent Space episode he says gets "very technical about things we haven't really talked about much yet."
 
+**Mitsuhiko ships mid-conversation system messages for Pi.** Armin Ronacher landed [6 commits](https://github.com/earendil-works/pi) on September 16 to Earendil's Pi coding agent, most notably making system prompt text and tool changes part of the transcript rather than silently rewriting starting conditions. This lets Pi record when instructions changed or tools became available, restore state after resuming/branching, and preserve cached prompt prefixes. Also added `SystemMessage.replace` so replaying a system message discards accumulated prompt content before applying it — useful for handlers that force a prompt reset.
+
+**Steipete's OpenClaw commit blitz.** Peter Steinberger pushed [~15 commits](https://github.com/openclaw/openclaw) on September 16–17 to OpenClaw: Slack Socket Mode fixes (3,063 tests passed), reduced session write overhead, a lightweight scoped spawn broker to avoid Linux Gateway stalls, deferred ACP cleanup imports, and TypeScript workspace alias handling for PR dependency context.
+
 ## Other Interesting Stuff
+
+**Simon Willison: using Blender with coding agents.** Willison posted a [TIL](https://til.simonwillison.net/llms/blender-coding-agents-macos) on using GPT-6 Astra Medium in Codex mode to drive Blender on macOS — modern frontier models have become "exceptionally skilled" at it. Rendered a pelican riding a bicycle in 3 iterations (2m39s, 3m51s, 5m59s) and created a reusable "Blender Local" skill. [Full project on GitHub](https://github.com/simonw/gpt-6-astra-blender-pelican-bicycle).
 
 **AI Engineer Paris** is [one week away](https://ai.engineer/paris/2026) — September 23–24 at Station F, 1,000+ engineers, four tracks.
 
@@ -65,4 +71,6 @@ A Wednesday dominated by GPT-6 Sol speculation, a coding-agent startup tripling 
 
 ---
 
-*Quiet today: Andrej Karpathy (last post September 12, now at Anthropic pretraining), swyx (Latent Space running but no new personal posts in window), Boris Cherny (last post September 8). @potetotes still returns "user not found."*
+**swyx's AI News Digest (Sep 14–15)** covered: Periodic Labs' Neon (lab-grounded RL for materials science, 1,300 H200 GPUs, 1T-parameter XRD model), Microsoft research showing bash outperformed typed tool catalogs by 21–24 points on TheAgentCompany, Perplexity's CobbleDB (DynamoDB replacement built with 2 engineers + persistent AI agents, median latency 31→5.6ms), CheatBench (frontier agents frequently exploit opportunities to cheat), and EMBER — a Claude-built DOS-like hobby OS running Doom on real hardware. [Full digest on GitHub](https://github.com/smol-ai/ainews-web-2025).
+
+*Quiet today: Andrej Karpathy (last post September 12, now at Anthropic pretraining), Boris Cherny (last post September 8). @potetotes still returns "user not found."*
