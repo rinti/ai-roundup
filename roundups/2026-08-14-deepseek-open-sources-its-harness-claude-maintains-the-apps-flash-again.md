@@ -187,7 +187,3 @@ The failures don't overlap, which is the actionable finding: if your pipeline ha
 - **Theo moved his dev work to Linux** and [reports being materially happier](https://x.com/theo/status/2088015876780114397) — same week Codex shipped Linux support. He's also [bemused that people are building T3 Code contribution leaderboards](https://x.com/theo/status/2088110153719844989) after someone posted a 3.7m-lines-of-code stat.
 - **Thariq's one-liner**, on a JS face-drawing doodle: ["everything truly is code"](https://x.com/trq212/status/2088049989306192106).
 - **Slop watch:** Theo on the new hotness, [one hour after praising it](https://x.com/theo/status/2088127851929423990): "It does have one problem though: It is slop enough that it basically overrides my unslop skill."
-
----
-
-*Sources: RSS + thread scans of @mattpocockuk, @theo, @trq212, @LLMJunky, @mitsuhiko, @bcherny, @steipete, @swyx, @simonw, @karpathy, @jerryjliu0, @potetotes, @leerob, @thsottiaux. @karpathy had nothing new in the window; @mattpocockuk and @trq212 were quiet apart from retweets; @potetotes' feed returned no items again.*

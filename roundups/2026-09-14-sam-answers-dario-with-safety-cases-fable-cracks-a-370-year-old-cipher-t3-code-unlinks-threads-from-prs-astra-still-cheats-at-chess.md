@@ -68,7 +68,3 @@ A quiet Sunday until Sam Altman posted twice around 4 AM UTC Monday, turning Sat
 **Trump uses AI.** Via Theo, [Acyn's clip](https://x.com/theo/status/2099346509913584007): asked what he uses AI for, Trump said "I don't want to tell you that."
 
 **Groceries, 2028.** [Paula](https://x.com/paularambles/status/2099159164807426427), reshared by Steinberger: your agent buys soup ingredients, notices carrots are 10 cents up, reroutes agricultural shipments, floods the West Coast carrot market and triggers a diplomatic incident with Canada. Total savings: 23 cents.
-
----
-
-*Sources: RSS feeds for all 14 accounts via nitter.jaydenha.uk, plus thread pages for the high-engagement posts. @potetotes returned 404 as usual. @karpathy, @swyx, @leerob and @thsottiaux had nothing new in the window; @trq212 only reshared Saturday's pacing posts. The LessWrong post was read via GreaterWrong because lesswrong.com sits behind a Vercel checkpoint for non-browser requests.*

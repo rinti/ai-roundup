@@ -74,5 +74,3 @@ A related warning from **swyx** on the cost of over-trusting your context files:
 - **Codex grows a mascot**: [*"So I guess Codex has a little robot now? (It's not as cute as the Claw'd crab)"*](https://x.com/simonw/status/2077048987350343965) — and Simon found you can [tell Codex to generate a custom pet sprite via gpt-image-2](https://x.com/simonw/status/2077111515044532520), then [reverse-engineered how the generation mechanism works](https://x.com/simonw/status/2077159351899578533).
 - **Armin's weekend read**: [*"What can the bible tell us about vibecoding?"*](https://x.com/mitsuhiko/status/2077069945473495073) — his *"The Tower Keeps Rising"* essay on the incentives (and hubris) of the current moment.
 - **Encrypted-prompt shenanigans**: mitsuhiko notes the timing — [a day after he spoke on stage about encrypted reasoning traces, *"we get new SOTA labs shenanigans: encrypted prompts."*](https://x.com/mitsuhiko/status/2077009119614017949)
-
-*Note: @potetotes' feed again returned no items (Nitter serves an empty channel for the account), so it's unrepresented in this dispatch. @karpathy and @bcherny had no new posts in the window.*

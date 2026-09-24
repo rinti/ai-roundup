@@ -128,7 +128,3 @@ The concrete claim behind it, per [Latent Space's writeup](https://www.latent.sp
 **Agent latency isn't the model.** A paper instrumenting ten agentic apps ([via dair_ai](https://x.com/dair_ai/status/2090117595907383672)) found non-LLM components dominate latency in half of them — sandbox memory peaking at 28GB/session, 32x latency variation across subsystems. Task-aware serving cut latency 29–40%, tool-result caching removed 35% of redundant search calls.
 
 **Qdrant's filterable HNSW** ([post](https://x.com/qdrant_engine/status/2089999409404957029)): filtered ANN belongs in the index, not just at query time — on a 1% filter over 1M vectors they report 99.8% recall at 1.0ms vs ACORN's 67.7% at 4.7ms.
-
----
-
-*Sourcing notes: nitter.net returned "Instance has been rate limited" for nearly every request across three hours this morning (only @trq212 and @karpathy got through, and @karpathy has posted nothing since Aug 2), and the usual fallbacks (xcancel RSS, other public instances) were down or bot-walled. This issue was assembled from account RSS where available plus blogs (simonwillison.net, lucumr.pocoo.org), Bluesky (@mitsuhiko.at, @simonwillison.net), YouTube (Theo), the fxtwitter API for individual tweets, and Latent Space's AINews recaps. No Nitter thread pages could be fetched, so reply-level discussion is thin. No usable feed today for @mattpocockuk, @LLMJunky, @bcherny, @steipete, @swyx (covered via Latent Space instead), @jerryjliu0, @leerob, or @thsottiaux; @potetotes remains empty.*

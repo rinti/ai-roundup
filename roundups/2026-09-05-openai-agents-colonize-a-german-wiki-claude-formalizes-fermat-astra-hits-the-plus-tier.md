@@ -95,7 +95,3 @@ GitHub published [Project HydraFusion](https://github.blog/ai-and-ml/github-copi
 - **Extropic Z1T**: [first family of transformer-like models](https://x.com/extropic/status/2095935171312996562) for their sparse probabilistic Z1 hardware, claiming up to 140x energy efficiency over GPUs and a new scaling law for sparse transformers.
 - **The Hugging Face easter egg.** Nvidia's acquisition price of $12,930,300,000 encodes 129,303, the decimal value of U+1F917, the hugging face emoji. Awni Hannun: ["$47.9 million mistake not naming the company 🫶."](https://x.com/awnihannun/status/2095647026814054527)
 - Theo is [back in a cast](https://x.com/theo/status/2096027559826006211) for at least four weeks with a 50% chance of another thumb reconstruction. Uber has started recommending trips to the hospital.
-
----
-
-**Sourcing note:** Tracked-account coverage this issue comes from live Nitter community instances (RSS plus thread pages), with Bluesky, Simon's blog, Theo's YouTube feed and HN as before. Karpathy and Lee Robinson posted nothing in the window; potetotes' feed still returns nothing. Latent Space had no new issue since Thursday's Astra recap. The Anthropic FLT thread and the collusion.wiki thread were read with one reply page each.

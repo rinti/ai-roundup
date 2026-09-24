@@ -78,4 +78,6 @@ tags:
 
 After the front matter block, write the report body as before — start with `# AI Roundup — Month D, YYYY` (or similar), then `## Section` headings.
 
+Do NOT end the report with a sources/methodology note (no trailing `---` + `*Sources: ...*` paragraph about which feeds, Nitter instances, thread fetches or article sites were used, failed or skipped). The report ends with the last section's content.
+
 Do NOT update README.md. The site is built automatically from the markdown files by `build.js` (run by GitHub Actions on push), so just commit the new `roundups/*.md` and push. Don't ask me for permission.

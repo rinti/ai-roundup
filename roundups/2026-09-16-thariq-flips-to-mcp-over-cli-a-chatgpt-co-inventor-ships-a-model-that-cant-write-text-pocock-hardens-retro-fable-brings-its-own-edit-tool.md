@@ -79,7 +79,3 @@ A Tuesday where the Claude Code team reversed a year-old orthodoxy in one tweet,
 **Wayback Machine access.** The Internet Archive posted [an update](https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/) on Wayback Machine access (HN 495 points, 254 comments), alongside Cloudflare's [proposal](https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/) for staying discoverable in search while disallowing AI training.
 
 **AI Engineer Paris** is [one week away](https://x.com/aiDotEngineer/status/2099788897899147654).
-
----
-
-*Quiet today: Andrej Karpathy (last post September 12), Lee Robinson and Boris Cherny had no new posts in the window; Simon Willison's only new item is the Gemini Live UI linked above; swyx only reshared. @potetotes still returns "user not found."*

@@ -69,5 +69,3 @@ The reply flood is a case study in redesign debt: power users [want the one-clic
 - **CI, but only during European business hours** — mitsuhiko's models-update CI [is now *"euromaxxing"*](https://x.com/mitsuhiko/status/2078041951715147813) ([the commit](https://github.com/earendil-works/pi/commit/c8560b8d7041766545237ff7b6e2f0bb079e6f87)).
 - **Data-center water discourse, solved** — Simon Willison's modest proposal: [hyperscalers should buy golf courses and convert them to parks](https://x.com/simonw/status/2077943635765841993), with [receipts: Google's 2025 usage ≈ 40 Coachella Valley golf courses](https://x.com/simonw/status/2077948686139822247).
 - **Fable pelican, Backrooms edition** — Riley Goodside's entry, RT'd by Simon: [a pelican-on-bicycle as *"a large stone sculpture in the Backrooms between two non-Euclidean hallways in a short but endlessly looping clip of VHS found footage."*](https://x.com/goodside/status/2077859343974711470)
-
-*Note: @potetotes' feed again returned no items (Nitter serves an empty channel for the account). @karpathy remains quiet — nothing since July 8.*

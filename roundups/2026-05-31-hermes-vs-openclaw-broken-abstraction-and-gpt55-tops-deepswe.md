@@ -83,7 +83,3 @@ Two sharpening points from the replies:
 - **Simon Willison** posted [notes on Opus 4.8 with pelicans-on-bicycles for all five thinking efforts](https://simonwillison.net/2026/May/28/claude-opus-4-8/), and continued his myth-busting streak — walking back the viral "[Uber blew its AI budget](https://x.com/simonw/status/2060209010486493500)" story as thinly sourced after digging in.
 - **Lee Robinson** kept beating the fundamentals drum: "[You might believe you should spend less time thinking about code because of AI. I strongly disagree](https://x.com/leerob/status/2058577150500909108)" — an engineer still has to be on call for what ships, so vendoring code, trimming dependencies, and "spending waaaay more time on system design" only get more valuable.
 - **Karpathy** stayed quiet on the Anthropic move; his most recent substantive post remains the "[ask your LLM to structure its response as HTML](https://x.com/karpathy/status/2053872850101285137)" riff on vision being the preferred *output* modality.
-
----
-
-*Sources: RSS + Nitter thread scans of the accounts in `TASK.md`. Note: `@potetotes`'s Nitter feed returned a "user not found" error again today, so that account is not represented. Several benchmark figures (the GPT-5.5 #1 DeepSWE claim and the per-task cost table) come from posts circulating via retweets; treat the exact numbers as the posters' self-reported figures rather than independently verified.*

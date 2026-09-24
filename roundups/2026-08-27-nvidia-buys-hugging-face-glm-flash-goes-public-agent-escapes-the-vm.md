@@ -78,7 +78,3 @@ Days after the Nitter and XCancel cease-and-desists, [Twitter Viewer](https://tw
 ### Bill Gates: the turbulent AI era
 
 [Gates published a long note](https://www.gatesnotes.com/a-turbulent-ai-era-and-critical-choices-to-make) on AI's next decade ([HN](https://news.ycombinator.com/item?id=49451313)) — worth a skim mostly as a signal of how the "AI will be fine, adapt" consensus among tech elders is getting more hedged.
-
----
-
-*Sourcing note: X account coverage remains limited after the Nitter/XCancel shutdowns. Today's pipeline: Simon Willison's blog (two posts covered above), Armin Ronacher's blog and Bluesky (nothing new since the already-covered Aug 24 essay), Theo's YouTube (no new videos since the memory audit covered yesterday), the two fresh AINews issues (the Hot Chips one is paywalled past its intro and mostly overlaps yesterday's Jalapeño coverage), Hacker News, and single-tweet lookups via vxtwitter. @mattpocockuk, @trq212, @LLMJunky, @bcherny, @steipete, @swyx, @karpathy, @jerryjliu0, @potetotes, @leerob, and @thsottiaux had no accessible activity to scan today.*

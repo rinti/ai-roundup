@@ -214,7 +214,3 @@ Ronacher's contribution to the outage discourse: ["Didn't we all ask for a bit o
 **Startup advice that generalises to agent backlogs**, from [Gabriel](https://x.com/gabriel1/status/2089812242024087798): "ignore literally everything and everyone that is not immediately ultra critical to what the biggest problem is right now. everything that feels like it's 'probably super useful in 3 weeks' is completely useless, NEVER do it."
 
 And Matt Pocock spent [nine hours in A&E](https://x.com/mattpocockuk/status/2089813036135518335) running an AMA out of boredom, then [got discharged](https://x.com/mattpocockuk/status/2089827015293571262) the moment he posted it. All is well.
-
----
-
-*Sourcing notes: @leerob's Nitter feed returned "user not found" across two attempts, so nothing from that account today. @simonw and @karpathy had no posts inside the window (last items Aug 16 and Aug 2 respectively). @potetotes' feed remains empty. Nitter thread pages were heavily rate-limited today; reply counts for the Anthropic protein-binder and Claude Workflows threads reflect partial reply pages.*

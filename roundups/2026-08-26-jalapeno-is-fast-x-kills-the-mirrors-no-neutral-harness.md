@@ -85,7 +85,3 @@ Figure introduced **Index**, described as the largest robot dataset in the world
 ## Videos
 
 **[Turn off Claude Code's Memory](https://www.youtube.com/watch?v=Jf54k7tFeEc)** (Theo, ~63k views) — Theo audited the memory feature on his main dev machine: Claude Code had quietly saved **45 memories, 26 of which had never been read once**. His argument for turning it off lands harder next to today's Knowledge Triage findings (naive compaction preserving 10% of safety rules): persistent agent memory is being shipped as a checkbox feature while the research says it needs to be engineered as typed, managed state. Sources he reacts to: [Voxyz_ai's post](https://x.com/Voxyz_ai/status/2089729031033729036) and [poteto's tweet](https://x.com/poteto/status/2089166694719922483).
-
----
-
-*Sourcing note: with Nitter dead (410 Gone) and XCancel shut down by cease-and-desist, account-level X coverage is currently limited to what surfaces via Bluesky, personal blogs, YouTube, the AINews recap, and per-tweet lookups (vxtwitter still resolves individual tweet IDs, slowly). Bluesky and blogs for @simonw, @mitsuhiko, and @steipete showed nothing new in the last 24h beyond what's above; @mattpocockuk, @theo (X), @trq212, @LLMJunky, @bcherny, @swyx, @karpathy, @jerryjliu0, @potetotes, @leerob, and @thsottiaux had no accessible activity to scan today.*

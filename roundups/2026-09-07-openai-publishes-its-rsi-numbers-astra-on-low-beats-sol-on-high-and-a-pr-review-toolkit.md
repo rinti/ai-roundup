@@ -74,7 +74,3 @@ An [Ask HN](https://news.ycombinator.com/item?id=49577129) (99 points): the post
 ### I refused to train the AI that could replace me
 
 James Maisiri's Rest of World [essay](https://restofworld.org/2026/ai-training-jobs-expert-replacement/) ([HN](https://news.ycombinator.com/item?id=49593959)): fresh from a PhD on AI reshaping agricultural work in South Africa, his first job offer was to train an AI to design assessments, teach undergraduates and mark essays, at 600 rand an hour in a country with a 30 rand minimum wage and 47.4% youth unemployment. The piece is about the trade-off he and other highly educated workers in the Global South face when the only well-paid work is transferring a decade of judgment into a system built to make that judgment unnecessary.
-
----
-
-*Coverage note: 13 of 14 tracked accounts were fetched via the community Nitter instances (x.n0g.xyz and nitter.jaydenha.uk carried most of the load; tw.eir-nya.gay rate-limited after a few requests and shitter.thepixora.com now demands an auth cookie for RSS). @potetotes still returns "user not found." @karpathy, @trq212, @bcherny and @leerob posted nothing new in the window, and @swyx only reposted the speculative decoding tutorial. OpenAI's blog is JS-walled for curl; both essays were read via a reader proxy.*

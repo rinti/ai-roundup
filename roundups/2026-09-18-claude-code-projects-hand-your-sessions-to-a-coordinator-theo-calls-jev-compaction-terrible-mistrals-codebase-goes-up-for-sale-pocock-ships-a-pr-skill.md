@@ -73,5 +73,3 @@ A Thursday where Anthropic turned Claude Code sessions into a managed organizati
 - **Codex for Open Source renewed.** Charlie Marsh [posted](https://x.com/charliermarsh/status/2099965140233847246) that the program now offers $100 Pro plans and doubles grants from 5,000 to 10,000 maintainers.
 - **Hister.** A [private search engine](https://github.com/asciimoo/hister) for pages you visit and files you keep, 561 points on HN.
 - **Farr summit.** Peter Steinberger is [speaking](https://x.com/lisabeyu/status/2100365391226978592) at FARR San Francisco on October 5 and on a Cloudflare Connect panel.
-
-Footnote: @potetotes still returns 404. Karpathy, swyx (own posts), leerob, simonw (own posts) and steipete (own posts) had nothing new in the window. nitter.jaydenha.uk returned intermittent 502s all morning; every other listed Nitter instance is behind Anubis or dead.

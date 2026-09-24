@@ -72,7 +72,3 @@ Stripe [abandoned its ~$50B pursuit of PayPal](https://www.bloomberg.com/news/ar
 ### "My business is dying"
 
 Angus Cheng, who built Bank Statement Converter in public, wrote a candid post: [My Business Is Dying](https://bankstatementconverter.com/blog/posts/2026-08-28-business-is-dying/) ([HN](https://news.ycombinator.com/item?id=49474776)). Revenue is down 24% from its February peak, new subscribers fell from 191/month in January to 45 in August, and his own diagnosis includes the obvious one: people now paste bank statements into free-tier chatbots, and building in public taught competitors (and Claude) exactly what to clone. It reads as a small, concrete case study of the single-purpose-SaaS extinction everyone theorizes about, written by the person it's happening to.
-
----
-
-*Sourcing note: X account coverage remains limited after the Nitter/XCancel shutdowns. Today's pipeline: Simon Willison's blog and Bluesky, Armin Ronacher's blog and Bluesky (nothing new since Aug 24), Theo's YouTube (one new video, covered above), the Latent Space feed (no new AINews issue since yesterday's), and Hacker News. @mattpocockuk, @trq212, @LLMJunky, @bcherny, @steipete, @swyx, @karpathy, @jerryjliu0, @potetotes, @leerob, and @thsottiaux had no accessible activity to scan today.*

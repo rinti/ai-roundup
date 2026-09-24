@@ -60,7 +60,3 @@ Saturday was a one-topic day. Dario's essay landed mid-afternoon European time a
 **UK MPs versus superintelligence.** Forty British MPs signed a letter to Prime Minister Andy Burnham calling for a ban on superintelligent AI development, [via LLMJunky](https://x.com/LLMJunky/status/2098567401201959211), who notes Britain has no such program to ban.
 
 **Jerry Liu** [on the gaokao](https://x.com/jerryjliu0/status/2098934848081838335), riffing on Garry Tan's call for a harder test above the SAT's 1600, and on doing frontier-AI things [with a fly brain](https://x.com/jerryjliu0/status/2098933449793114216) because frontier AI is too easy now.
-
----
-
-*Sources: RSS feeds for all 14 accounts via nitter.jaydenha.uk, plus thread pages for the high-engagement posts. @potetotes returned 404 as usual. @leerob and @bcherny had nothing new in the window beyond Boris resharing Dario's essay. @swyx's feed had no posts since September 11.*

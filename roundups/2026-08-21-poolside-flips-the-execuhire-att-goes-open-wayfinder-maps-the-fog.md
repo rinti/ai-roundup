@@ -96,7 +96,3 @@ Also from OpenAI: [collaborative editing for ChatGPT Sites](https://x.com/OpenAI
 **Cerebras CS-4:** [kimmonismus's summary](https://x.com/kimmonismus/status/2090468333476860347) — roughly double the performance on the same 5nm wafer via redesigned power delivery and cooling. 4T transistors, 900k cores, 250 PFLOPs per WSE-3 Turbo, and the practitioner-relevant claim: **4,400+ tokens/s per user on GPT-OSS-120B**, up to 30x GPU-based systems.
 
 **Kimi K3 on Ollama** is [now rolled out to over half its subscription base](https://x.com/ollama/status/2090505028998140182) with US/EU hosting and zero data retention — open-weight distribution catching up to open-weight quality.
-
----
-
-*Sourcing notes: nitter.net returned 429 for every request again today, xcancel's RSS now demands per-reader whitelisting, and the other public instances remain behind Anubis bot walls. Assembled from Bluesky (@simonwillison.net, @mitsuhiko.at — Armin has posted nothing new since the reasoning post covered yesterday), blogs, Theo's YouTube feed, the fxtwitter API for individual tweets, and Latent Space's AINews recaps. No thread replies could be read, and no usable feed today for @mattpocockuk (covered via the Latent Space interview instead), @trq212, @LLMJunky, @bcherny, @steipete, @swyx, @karpathy, @jerryjliu0, @leerob, or @thsottiaux; @potetotes remains empty.*

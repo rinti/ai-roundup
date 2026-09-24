@@ -71,7 +71,3 @@ Simon Willison shipped [llm-anthropic 0.27](https://simonwillison.net/2026/Aug/2
 ## Videos
 
 **[He's right.](https://www.youtube.com/watch?v=0wemf5SZkW4)** (Theo, ~64k views) — "Boris was ahead of us all again when he made Claude Code for frontier models, and he might be ahead of us all again." A look at what Boris Cherny is signaling next — worth watching alongside the kimmonismus post above about Boris and Thariq taking the Fable criticism to heart. Also: a short, [Terminals Might Slow You Down Now](https://www.youtube.com/shorts/sreUeVtkSPo) — Theo's continuing argument that raw-terminal workflows make you think more than you need to versus tools like T3 Code and Codex.
-
----
-
-*Sourcing notes: nitter.net now 403s RSS ("RSS feed is disabled") and 429s profile pages ("Instance has been rate limited"); xcancel demands per-reader whitelisting and its HTML sits behind a browser-verification wall, as do lightbrd and poast. Assembled from the Bluesky API (@mitsuhiko.at active; @simonwillison.net quiet), blogs (simonwillison.net, lucumr.pocoo.org, dejan.ai, alexzhang13.github.io, laude.org), Theo's YouTube feed, Latent Space's AINews recap (tweet IDs enriched via the fxtwitter API), and Hacker News. No thread replies could be read. No usable feed for @mattpocockuk, @trq212, @LLMJunky, @bcherny, @steipete, @swyx, @karpathy, @jerryjliu0, @leerob, or @thsottiaux (Thariq and Boris surface only secondhand via the kimmonismus post and Theo's video); @potetotes remains empty.*

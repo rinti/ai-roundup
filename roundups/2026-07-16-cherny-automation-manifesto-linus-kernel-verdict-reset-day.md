@@ -65,5 +65,3 @@ The more interesting signal is Theo's considered verdict on the *previous* week'
 - **LlamaParse goes conversational**: jerryjliu0 launched [Conversational Extract](https://x.com/jerryjliu0/status/2077437506686271882) — upload a doc, the agent drafts the extraction schema from it; *"writing JSON Schema by hand? That's over."*
 - **The post-browser thesis**: steipete RT'd signulll's [*"we're entering the end stage of the address bar… the journey starts in claude, chatgpt, siri, or some other ai system"*](https://x.com/signulll/status/2077475044305814014) — the browser as plumbing, not starting point.
 - **Slop, but make it a deliverable**: mitsuhiko on SOTA models' new habit — [*"after you are done with something, a SOTA model will just make you a HTML presentation of the work it has done. Looks like complete slop but hey."*](https://x.com/mitsuhiko/status/2077418026396221620)
-
-*Note: @potetotes' feed again returned no items (Nitter serves an empty channel for the account). @karpathy has posted nothing since July 8.*

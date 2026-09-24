@@ -88,7 +88,3 @@ Good to have a shareable canonical explanation, given how central the model-vs-h
 ## Videos
 
 **[Which AI Models Are Worth Using](https://www.youtube.com/watch?v=06BvFMW8Ng8)** (Theo, ~93k views) — a tier-list ranking of essentially every model worth considering right now. Carried over from Friday but still the most-watched recent AI video, and a useful practitioner-sentiment snapshot to read against today's Ramp/FT adoption data. Also new: a short, [Claude Code on Mobile Is Horrible](https://www.youtube.com/shorts/TcUpZUx-O84) (~27k views), the postscript to his run of "I'm done with terminals" takes.
-
----
-
-*Sourcing notes: nitter.net's RSS route now serves the same "RSS reader not yet whitelisted" wall as xcancel — both are effectively dead for feed scans, and the thread helper returns empty bodies. Assembled from Simon Willison's blog (simonwillison.net), Drew Breunig (dbreunig.com), Prime Intellect (primeintellect.ai), XDA, Earendil, Theo's YouTube feed, and Hacker News (front page + item API for comment highlights). Bluesky was quiet: @simonwillison.net and @mitsuhiko.at posted only short replies in the window. No usable feed for @mattpocockuk, @trq212, @LLMJunky, @bcherny, @steipete, @swyx, @karpathy, @jerryjliu0, @leerob, or @thsottiaux; @potetotes remains empty.*

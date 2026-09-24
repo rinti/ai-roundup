@@ -151,7 +151,3 @@ A [Latent Space episode summary](https://x.com/gokulr/status/2089034609191456802
 - **20 watts.** Gavin Baker's aside that human brains run on 15–20W [caught](https://x.com/theo/status/2088793798369481067) Theo, then [LLMJunky](https://x.com/LLMJunky/status/2088797492817076667): "20 watts is about what your monitor uses in sleep mode... that's the same efficiency that invented the modern world, imagined the theory of relativity, and put men on the moon."
 - **Dario vs. the algorithms.** [Theo](https://x.com/theo/status/2088800577430208822): "Kinda wild to see Dario blaming social media algorithms for hurting the public reputation of their text generation algorithms."
 - **Chrome Lite?** [steipete noticed](https://x.com/steipete/status/2089154019885490449) an unrequested new icon in his menu bar "that loaded a slow html box."
-
----
-
-*Feed notes: `@mitsuhiko`'s Nitter RSS returned "User not found" on both attempts today, so his own posts aren't represented directly (he appears via the Pi video and trq212's post). `@potetotes`' feed remains empty. `@bcherny` and `@karpathy` had no posts in the window.*

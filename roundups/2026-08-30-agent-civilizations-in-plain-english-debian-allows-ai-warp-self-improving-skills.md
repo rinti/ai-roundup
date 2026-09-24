@@ -77,7 +77,3 @@ Two smaller Simon items from Bluesky: he [tried mlx-serve for the first time](ht
 ### The Internet Archive's vintage AI collection
 
 For the weekend: the Internet Archive posted a [Vintage AI Collection](https://archive.org/details/vintageai) ([HN](https://news.ycombinator.com/item?id=49495845)), a browsable pile of early AI software and materials. Good rabbit hole if the week's takeover discourse has you nostalgic for when the field's scariest artifact was ELIZA.
-
----
-
-*Sourcing note: X account coverage remains limited after the Nitter/XCancel shutdowns, and no new Latent Space AINews issue had landed by publication time (the Aug 29 issue was covered yesterday). Today's pipeline: Simon Willison's blog and Bluesky, Hacker News (firebaseio + Algolia), Theo's YouTube (nothing new since Friday's NVIDIA video, now at 177k views), and Armin Ronacher's blog/Bluesky (quiet since Aug 24). @mattpocockuk, @trq212, @LLMJunky, @bcherny, @steipete, @swyx, @karpathy, @jerryjliu0, @potetotes, @leerob, and @thsottiaux had no accessible activity to scan today.*

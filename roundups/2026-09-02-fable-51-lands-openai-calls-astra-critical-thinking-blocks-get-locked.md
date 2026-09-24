@@ -133,7 +133,3 @@ Tarn Adams, co-creator of Dwarf Fortress, on what the last two years did to his 
 ### Theo's videos
 
 Two from [Theo](https://t3.gg) worth the time. [The Most Dangerous Claude Ever](https://youtu.be/SU7T8FztjKQ) (164k views) walks through yesterday's Hacker-Opus paper and the alignment and security update, and is the most accessible summary of that work if you did not read the paper. [OpenAI's Cursor Ban Is About Astra](https://youtu.be/7eCyl40P5jU) (17k views) argues the Cursor cutoff was always about protecting Astra's capabilities, which today's Critical designation makes look considerably more plausible than it did on Friday.
-
----
-
-*Sourcing note: X account coverage remains unavailable after the Nitter and XCancel shutdowns. Today's pipeline: Simon Willison's blog and Bluesky, the anthropicbot Bluesky mirror, Anthropic's own announcement, support and docs pages plus the system card PDF, OpenAI's newsroom feed, Hacker News via firebaseio and Algolia, Latent Space, and Theo's YouTube feed. Armin Ronacher's blog and Bluesky were quiet. @mattpocockuk appears here through his repo hitting Hacker News rather than through his timeline. @trq212, @LLMJunky, @bcherny, @steipete, @swyx, @karpathy, @jerryjliu0, @potetotes, @leerob, and @thsottiaux had no accessible activity to scan today.*

@@ -75,5 +75,3 @@ On the Pi front: the next release gets [**dynamic tool loading without cache wip
 - **More Codex power-user tips from @LLMJunky**: [natural-language search over past sessions](https://x.com/LLMJunky/status/2076065244267315344) ("find the session where we integrated Sol into the Lynk app"), [multiple Codex windows with CMD+SHIFT+N](https://x.com/LLMJunky/status/2075830541828386926), and a long-lobbied-for flag: [`codex --enable default_mode_request_user_input`](https://x.com/LLMJunky/status/2076156761443123352).
 - **Multi-agent hygiene tip** [via @LyalinDotCom](https://x.com/LyalinDotCom/status/2075989084728709492) (RT LLMJunky): if multiple agents work the same project, tell each one *"other models are working in this project — if anything odd happens or things change that you didn't do, don't panic and don't revert."*
 - **Paul Graham on reading** ([RT LLMJunky](https://x.com/paulg/status/2075980847228801132)): "The people who still read won't just be better informed. They'll be... the only ones who can think well."
-
-*Note: @potetotes' feed returned no items again today (Nitter serves an empty channel for the account), so it's unrepresented in this dispatch.*

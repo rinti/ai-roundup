@@ -187,5 +187,3 @@ Their own Agentic Plus tier posts 95.9/93.9/93.8 across rotated/scanned/handwrit
 - **Creator economics.** Theo shared [one of the final payouts](https://x.com/theo/status/2088389637819822542) before X's revenue-share changes, noting it ["doesn't even cover 1/10th of my media team payroll. We have 8 employees now!"](https://x.com/theo/status/2088395234833306065)
 - **Podcast:** Simon Willison on [Talking Postgres Ep42](https://talkingpostgres.com/) on how AI is changing software development.
 - **Events:** [AI Engineer NYC](https://ai.engineer/cfp) wave-1 CFP acceptances are being finalized (Oct 12–14), and LlamaIndex is [co-hosting a billiards night](https://x.com/llama_index/status/2088332332038037660) for AI engineers in SF next Thursday.
-
-*Footnote: @karpathy and @potetotes returned no items in this window.*

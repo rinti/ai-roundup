@@ -79,7 +79,3 @@ Theo [made a video about Boris Cherny's automation thread](https://x.com/theo/st
 - **Form-filling agents need boxes, not just reading**: via LLMJunky, [a specialized Form Field Detection VLM beating frontier VLMs on document AI](https://x.com/jdrhyne/status/2079701128267092264) — agents read the page fine but miss fields because they can't put a tight box on them; public benchmark included.
 - **Local/open AI bull case video**: LLMJunky RT'd [Ahmad Osman's "DROP EVERYTHING" explainer](https://x.com/TheAhmadOsman/status/2079542489808036080) on why hardware prices (even used RTX 3090s) keep rising, whether frontier intelligence stays datacenter-only, and the bull case for local/open-source AI.
 - ChatGPT Work drifting beyond work: Tibo shares a [TechRadar piece on giving its new Work mode annoying life-admin tasks](https://www.techradar.com/ai-platforms-assistants/chatgpt/i-gave-chatgpts-new-work-mode-my-most-annoying-life-admin-tasks-and-it-handled-them-like-a-pro) — ["ChatGPT Work => ChatGPT HelpMeWithEverything?"](https://x.com/thsottiaux/status/2079731272797372425)
-
----
-
-*Coverage notes: Nitter returned "user not found" errors for @simonw, @swyx, and @steipete RSS all day (instance flakiness) — Simon is covered above via his blog and RTs; swyx and steipete may have items we missed. @potetotes RSS remains empty as usual. @bcherny and @leerob had no posts in the window.*

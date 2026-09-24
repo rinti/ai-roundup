@@ -249,7 +249,3 @@ A casual but pointed thread: SaaS Tobi-Lutke energy meets independent-hacker ene
 ### mitsuhiko & antirez's ds4: the slop arrives
 
 A throwaway but thematic line from mitsuhiko: *"Unsurprisingly the ds4 repo has slop security reports and slop PRs :-/."* The ds4 ports were one of last week's feel-good stories (focus and polish on a small open-weights model); the open-source maintainer tax shows up immediately when the project is visible.
-
----
-
-*Compiled from RSS scans of [mattpocockuk](https://x.com/mattpocockuk), [theo](https://x.com/theo), [trq212](https://x.com/trq212), [LLMJunky](https://x.com/LLMJunky), [mitsuhiko](https://x.com/mitsuhiko), [bcherny](https://x.com/bcherny), [steipete](https://x.com/steipete), [swyx](https://x.com/swyx), [simonw](https://x.com/simonw), [karpathy](https://x.com/karpathy), [jerryjliu0](https://x.com/jerryjliu0), [potetotes](https://x.com/potetotes), [leerob](https://x.com/leerob) and thread-level browsing on nitter. Karpathy and potetotes were quiet in the window; jerryjliu0 had only the "moats in 2026 are the context layer" tweet, which mostly rephrased ground we've already covered.*

@@ -73,7 +73,3 @@ Matt Pocock's [AI Coding Crash Course is fully shipped](https://x.com/mattpocock
 - **The tokenpocalypse and PDFs**: Simon Willison [wants PDFs reclassified as boomer technology](https://x.com/simonw/status/2085763057549254891), with a supporting TIL from [404 Media's tokenpocalypse piece](https://www.404media.co/the-tokenpocalypse-is-here-companies-are-scrambling-to-stop-spending-so-much-on-ai/): a material chunk of Accenture's token spend is non-engineers converting PDFs to markdown with LLMs.
 - **ChatGPT mobile tip**: [long-press the send button to adjust reasoning effort](https://x.com/simonw/status/2085749476275450219).
 - **swyx wants the phone**: an [open letter to OpenAI](https://x.com/swyx/status/2085884470306234676) — skip the Alexa/Reachy hybrid, "we can read 2-4x faster than we talk... we want phone. signed, everybody."
-
----
-
-*Quiet this cycle: @karpathy, @leerob, and @steipete had no posts in the window. The @potetotes RSS feed returned 0 items (known feed issue).*

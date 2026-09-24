@@ -87,7 +87,3 @@ A dense Monday. Boris Cherny and Andrej Karpathy posted nothing from their own a
 - **Attention is all you have.** Alice GG's [essay](https://alicegg.tech/2026/09/21/attention) on the Tetris effect and algorithmic feeds took 720 points on [HN](https://news.ycombinator.com/item?id=49787726), where half the thread thought it was about transformers.
 - **Gemini's breakout, third wave.** The Gemini-hacked-three-companies story from last week is still cycling through CNBC and the trade press after Google's confirmation; nothing new beyond what the September 19 roundup covered.
 - **Grok translations.** Theo's [complaint](https://x.com/theo/status/2101867122389594321) about Grok's inline translations on X carried over from Sunday.
-
----
-
-*Sources: nitter.jaydenha.uk RSS and thread pages for all accounts (@potetotes returns 404, as it has for weeks). Simon Willison's blog, Latent Space, pi.dev, x.ai, mimo.xiaomi.com, anthropic.com, openclaw.ai, GitHub READMEs, Hacker News via the Algolia API, and Google News for the non-X material.*

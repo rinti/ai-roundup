@@ -113,7 +113,3 @@ The smartest reply, from `@TomGiant1`: *"'Combating tokenmaxxing slop' is the sl
 **Latent Space: Biohub's Protein World Model.** swyx and team published a deep-dive episode with `@alexrives` (Head of Science, Biohub) on **ESMC-6B, ESMFold2, 6.8B proteins, 1.1B structures, antibody design, SAEs, and the bitter lesson for biology** — *"why biology may scale even further than language."* Notable for AI engineers tracking domain-specific foundation models: this is the same Rich Sutton *bitter lesson* logic running into protein space at frontier-LLM scale. [Episode](https://www.latent.space/p/esmfold2) · [Tweet](https://x.com/latentspacepod/status/2059773588593660119).
 
 **Theo's tribute, "RIP Marc."** A short personal note: *"These two weirdos made me feel so welcome when I lived to San Francisco. The world feels a little darker without them in it anymore. RIP Marc. Thank you for the decades of inspiration. 🙏"* [Tweet](https://x.com/theo/status/2059720448716439562).
-
----
-
-*Scanned 13 accounts; `@potetotes` and `@karpathy` had no posts in the 24h window. Coverage focuses on activity from May 27 onwards.*

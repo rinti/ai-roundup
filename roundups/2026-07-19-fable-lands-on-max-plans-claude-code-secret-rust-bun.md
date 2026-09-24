@@ -69,7 +69,3 @@ LLMJunky's [practical tip](https://x.com/LLMJunky/status/2078624104949952680): C
 - **OpenAI Micro keyboard mania** — the OpenAI Micro keyboards are [reselling for ~$1000 on eBay](https://x.com/LLMJunky/status/2078730044638220354) (sold listings, not asks).
 - **The vibe-coding graveyard** — Armin Ronacher [confesses](https://x.com/mitsuhiko/status/2078450786963472724) to "such a large graveyard of vibe coded apps and productivity things at this point," and [appreciates](https://x.com/mitsuhiko/status/2078583203237896195) that models now understand instructions like "put the next button directly next to the input box like we do on the next page."
 - **Grok 4.6 teased** — [LLMJunky notes](https://x.com/LLMJunky/status/2078346704529555494) Elon Musk says it's coming soon and can challenge the best models. His own [Rocket League benchmark](https://x.com/LLMJunky/status/2078267563511787532) verdict on Kimi K3: nice UIs, "not Fable."
-
----
-
-*Quiet feeds this cycle: @karpathy, @bcherny, @leerob, @mattpocockuk (no posts in the window). @potetotes RSS returned 0 items (known-empty feed).*

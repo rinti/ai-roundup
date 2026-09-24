@@ -175,7 +175,3 @@ His [reason](https://x.com/trq212/status/2089415713098522688) is the one that ma
 - **YouTube is changing what counts as a view** (from 8/24, the moment playback begins, no minimum watch time). Theo [doesn't like it](https://x.com/theo/status/2089441199862198521) — "YouTube view counts are the only view counts that mean anything" — but [gets why](https://x.com/theo/status/2089441684094644394): he lost a brand deal to someone half his price "getting 70,000 views" on X, where a view counts as an API response with your post ID.
 - **Slop of the day.** LLMJunky: ["30 agents and 22,000 lines of slop — all i asked was to center a div"](https://x.com/LLMJunky/status/2089593523506921676). Adjacent, from Jarrod Watts: ["POV: You try Codex Ultra mode (143 agents have spawned and only written tests so far)"](https://x.com/jarrodwatts/status/2089437607767822558).
 - **Framework authors got AI-pilled early.** trq212 [noticed](https://x.com/trq212/status/2089085004966207679) that the creators of Django (Simon Willison), Flask (Armin Ronacher) and Rails (DHH) were all early adopters — "it says a lot."
-
----
-
-*Notes on sourcing: nitter.net intermittently returned "user not found" HTML for several accounts and needed retries; xcancel.com now requires RSS-reader whitelisting and is no longer usable as a fallback. Karpathy had no posts in the window.*

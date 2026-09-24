@@ -76,7 +76,3 @@ The structured-output replies make the case better than the changelog does — `
 **leerob's recommended watch: Andy Matuschak's new talk.** Matuschak argues coding agents could finally break us out of two cages — *"the app model, which traps computing in one-size-fits-all silos; and programming as a specialization, which has crowded out cultures of imagination and domain insight."* A more optimistic, capabilities-expanding counterweight to the week's *"AI code is a liability"* discourse. [Tweet](https://x.com/leerob/status/2059095943190913214) · [talk](https://andymatuschak.org/tat).
 
 **Quote of the day**, via Paul Graham (re-shared by Simon Willison): *"I have never knowingly finished reading an email signed by a human but written by AI. It feels like being lied to, and who would stand for that?"* [Tweet](https://x.com/paulg/status/2058855820121498037).
-
----
-
-*Scanned 13 accounts; `@potetotes` was unavailable on the mirror at fetch time. Coverage focuses on activity from ~May 26–27, 2026.*

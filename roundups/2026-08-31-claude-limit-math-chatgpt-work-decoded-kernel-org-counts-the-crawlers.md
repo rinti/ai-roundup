@@ -68,7 +68,3 @@ Sander Dieleman (DeepMind) wrote a 44-minute-read survey, [Continuous diffusion 
 ### "I just chose words carefully"
 
 Not AI, but the anti-AI-writing story of the day (600 points, [HN](https://news.ycombinator.com/item?id=49503601)): Marcin Wichary's [post](https://unsung.aresluna.org/i-just-chose-words-carefully/) about a late-90s Super Metroid guide whose author fully justified 17,000+ words of monospace ASCII, every line ending exactly at the right margin, no double spaces, with no software. Asked how, the author replied: "None. I just chose words carefully." A nice thing to sit with in a week where the marginal cost of prose hit zero.
-
----
-
-*Sourcing note: X account coverage remains limited after the Nitter/XCancel shutdowns. Today's pipeline: Simon Willison's blog and Bluesky, Hacker News (firebaseio + Algolia), Theo's YouTube, the anthropicbot Bluesky mirror of @ClaudeDevs, and Armin Ronacher's Bluesky (still quiet since Aug 24). No new Latent Space AINews issue since Aug 29. @mattpocockuk, @trq212, @LLMJunky, @bcherny, @steipete, @swyx, @karpathy, @jerryjliu0, @potetotes, @leerob, and @thsottiaux had no accessible activity to scan today.*

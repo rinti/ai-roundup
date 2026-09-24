@@ -100,7 +100,3 @@ On the training side, the recap's throughline was environments over prompts: Goo
 **[FreeToken](https://x.com/Yuchenj_UW/status/2090857982385066474)** (UC Berkeley) — 753B GLM-5.2 at 14.9 tok/s on a single RTX PRO 6000, Qwen3.6-35B at 39.3 tok/s on an 8GB RTX 4060 laptop, claiming 2-4x Ollama throughput on consumer GPUs. The local-inference floor keeps dropping.
 
 **Compute stays tight**: [saranormous](https://x.com/saranormous/status/2090655089077977130) on good AI companies being growth-limited by compute, and [David Sacks](https://x.com/DavidSacks/status/2090790063047168473) on Harvey using open-source Kimi K3 for legal SOTA at lower cost — his argument being that restricting open models would mostly hurt US application-layer companies. [Ollama added Kimi K3](https://x.com/ollama/status/2090906360808411568) to Pro/Max subscriptions the same day.
-
----
-
-*Sourcing notes: nitter.net now returns "RSS feed is disabled" outright (a new failure mode — not the usual 429), xcancel still demands per-reader whitelisting, and poast/privacyredirect/lightbrd remain behind bot walls. Assembled from Bluesky (@mitsuhiko.at active; @simonwillison.net quiet), blogs (simonwillison.net, lucumr.pocoo.org), Theo's YouTube feed, the fxtwitter API for individual tweets, and Latent Space's AINews recap. No thread replies could be read, and no usable feed for @mattpocockuk, @trq212, @LLMJunky, @bcherny, @steipete, @swyx, @karpathy, @jerryjliu0, @leerob, or @thsottiaux (his 20M-users post reached via the recap + fxtwitter); @potetotes remains empty.*

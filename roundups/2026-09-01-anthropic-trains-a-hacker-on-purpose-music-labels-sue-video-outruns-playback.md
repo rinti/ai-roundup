@@ -87,7 +87,3 @@ Murat Demirbas (the distributed-systems professor behind the Metadata blog) [arg
 ### uBlock Origin is gone from the Chrome Web Store
 
 Not AI, but the day's biggest tech story (650 points, [HN](https://news.ycombinator.com/item?id=49514878)): Google [removed the remaining Manifest V2 extensions](https://webiterate.dev/google-removed-extensions-ublock-origin-108/) from the Chrome Web Store, including uBlock Origin. The MV3 successor, uBlock Origin Lite, can't do everything the original could. The HN thread is mostly people posting Firefox migration notes, as it has been at every previous step of this long-telegraphed removal.
-
----
-
-*Sourcing note: X account coverage remains limited after the Nitter/XCancel shutdowns. Today's pipeline: the Latent Space AINews recap (first new issue since Aug 29, tweet links harvested from it), Simon Willison's blog and Bluesky, the anthropicbot Bluesky mirror, Hacker News (firebaseio + Algolia), Theo's YouTube, and Armin Ronacher's blog and Bluesky (both quiet). @mattpocockuk, @trq212, @LLMJunky, @bcherny, @steipete, @swyx, @karpathy, @jerryjliu0, @potetotes, @leerob, and @thsottiaux had no accessible activity to scan today.*

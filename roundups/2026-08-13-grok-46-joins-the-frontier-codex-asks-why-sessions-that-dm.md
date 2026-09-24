@@ -187,7 +187,3 @@ The [full track went live](https://x.com/aiDotEngineer/status/208764031621212173
 - **The AI harm story of the day is agricultural, not digital:** a farmer [killed nearly 25 acres of his own crop](https://x.com/theo/status/2087625841069248968) after an AI app recommended a chemical that destroyed the weeds *and* the plants. Theo: "Okay fine, AI definitely wasted a bunch of water here."
 - **Pangram can identify which model family wrote a piece of text** — and [is using that to chart shifting market share in the AI race](https://x.com/elyasbuilds/status/2087202317128909092). Interesting adjacency to this week's Claude text-watermarking news.
 - **Matt Pocock's one-liner of the week:** ["My IDE is Discord"](https://x.com/mattpocockuk/status/2087555290174566491). See also steipete's RT: ["we solved agi but github was down so we couldn't merge it sorry"](https://x.com/ptr/status/2087683878773572006).
-
----
-
-*Sources: RSS + thread scans of @mattpocockuk, @theo, @trq212, @LLMJunky, @mitsuhiko, @bcherny, @steipete, @swyx, @simonw, @karpathy, @jerryjliu0, @potetotes, @leerob, @thsottiaux. @simonw and @karpathy had nothing new in the window; @potetotes' feed returned no items again.*

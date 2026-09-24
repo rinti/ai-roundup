@@ -88,7 +88,3 @@ On models: LlamaIndex benchmarked **Opus 4.8 on document understanding** vs 4.7 
 - **pi 0.76.0** shipped (Mitsuhiko, [here](https://x.com/mitsuhiko/status/2059730277367189528)) with workarounds for codex transport issues in Asia and Europe; he also noted pi running a 20-minute session on DeepSeek Flash via DwarfStar4 without him noticing, and the project moving to **trusted publishing**.
 - **llama.cpp** now has an official site at [llama.app](https://x.com/ggerganov/status/2060394400237109567) (RT'd by Mitsuhiko).
 - **Karpathy** stayed quiet post-Anthropic-move; nothing new in the last 24h.
-
----
-
-*Sources: RSS + thread scans of the accounts in `TASK.md`. Note: `@potetotes`'s Nitter RSS feed was unavailable across multiple retries today (returned an error page rather than feed XML), so that account is not represented in this issue.*

@@ -71,5 +71,3 @@ With "Opus 5 will beat Fable 5 soon" rumors circulating, **Simon Willison asked 
 - **sama's Sol showcase**: OpenAI is [soliciting the coolest things people have built with 5.6 Sol](https://x.com/sama/status/2076398253332140410) (RT'd by steipete), prompting the wry aside that [*"tibo can reset the usage limits at ant now too"*](https://x.com/AdrienLE/status/2076505120175763954).
 - **openclaw on e-ink**: someone [got @openclaw running on a Remarkable Pro](https://x.com/colinsolvely/status/2076439863759347803) (RT'd by steipete) — "working great."
 - **LLMJunky on the platform wars**: [*"Apple's war on OpenAI has begun lol."*](https://x.com/LLMJunky/status/2076411754423124268)
-
-*Note: @potetotes' feed again returned no items (Nitter serves an empty channel for the account), so it's unrepresented in this dispatch.*

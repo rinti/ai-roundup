@@ -80,7 +80,3 @@ A Monday with two Anthropic engineering stories, a flood of Codex complaints ans
 **Harness Engineering track.** AI Engineer [published](https://x.com/aiDotEngineer/status/2099551501613986198) the [Harness Engineering track](https://www.youtube.com/watch?v=PXj0p_mW9nI) from World's Fair 2026: ports, proofs, kill switches, and "what is left of an agent when you remove the model." The Code Summit returns to San Francisco November 10 to 12.
 
 **Ghostty CLI.** Armin [shared](https://x.com/mitsuhiko/status/2099623836001910818) Mitchell Hashimoto's demo of the CLI for the superlogical multiplexer: everything the GUI does, plus session creation, splits and command execution, aimed at hooking agents and editors in.
-
----
-
-*Quiet today: Andrej Karpathy, Lee Robinson and Simon Willison had no posts in the window beyond what is linked above; swyx only reshared. @potetotes still returns "user not found."*

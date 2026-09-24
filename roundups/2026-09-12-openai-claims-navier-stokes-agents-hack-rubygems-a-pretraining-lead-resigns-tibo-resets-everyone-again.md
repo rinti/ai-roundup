@@ -55,5 +55,3 @@ This one covers September 8 through 12, since the three intervening runs died on
 ## Other Interesting Stuff
 
 **DeepSeek V4.1-Flash** per AINews: 763B total parameters, 8B active for prefill and 16B for decode in a causal encoder–decoder, 1M context, MIT license, $0.30/$1.20 per million tokens. Artificial Analysis Index 40, AutomationBench 69% tying Astra, but extremely verbose at about 89k tokens per task ($0.27/task). antirez's DwarfStar runs it on a 128GB M5 Max by streaming weights from SSD. Qwen3.8-27B landed on Cerebras (AA 34). Grok 4.7 is "in 10 days" per Lee. Claude added 18+ age assurance (641 points on HN). Meta's Muse Spark 1.3 is free in Cline. Theo posted his final X payout and a Hetzner versus GMKtec comparison. Hugging Face's security.txt now contains a joke aimed at agents. OpenAI published a 250+ person "Defense Factory" writeup. Cursor renamed its ambassadors Grok Bot, per Gergely Orosz.
-
-*@potetotes's Nitter feed returned 404 for this window; nothing from that account is included.*

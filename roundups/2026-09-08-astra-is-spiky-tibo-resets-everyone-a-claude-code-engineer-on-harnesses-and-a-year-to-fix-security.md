@@ -73,5 +73,3 @@ Latent Space [launched](https://x.com/latentspacepod/status/2097075911170593266)
 - Adafruit covered [T3CAD](https://x.com/i2cjak/status/2097054749988192283), an agent-driven electronics workspace with KiCad PCB, schematic, Gerber and 3D support.
 - Armin Ronacher's weekend [Astra slop thread](https://x.com/mitsuhiko/status/2096720787998650453) from yesterday is still running; his software factory has now [reinvented let bindings](https://x.com/mitsuhiko/status/2096714059609473326) as def.
 - Theo went [live](https://x.com/theo/status/2097113797630837063) Sunday night for a Fable versus Astra showdown.
-
-*Sources: Nitter RSS and thread pages via x.n0g.xyz and nitter.jaydenha.uk for all tracked accounts; Bluesky for Simon Willison; simonwillison.net; Theo's YouTube feed; developing.dev transcript; Latent Space; Hacker News. @potetotes still returns "user not found" and @bcherny, @karpathy, @leerob and @simonw had no posts in the window.*

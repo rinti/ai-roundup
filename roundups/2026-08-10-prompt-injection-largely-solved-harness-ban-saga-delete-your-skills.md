@@ -62,7 +62,3 @@ A viral follow-up to the Hugging Face incident coverage: Simon Willison [highlig
 - **leerob on Grok**: xAI is [iterating on Grok's writing quality and design taste](https://x.com/leerob/status/2086114926142140804), with Grok 4.6 "soon."
 - **Vibe-coded games are easy; fun games aren't**: a Simon Willison RT worth keeping — [churning out something that *looks* like a game is trivial now; building one that's actually fun "is still way beyond me (and beyond Claude and GPT-5.6, too)"](https://x.com/simonw/status/2086454620470309371).
 - **The eternal Claude joke**, via LLMJunky's RT of Isaac King: ["Please fully remove this feature." / "Done! I have removed the feature, and added some tests to ensure that the feature continues to not exist."](https://x.com/IsaacKing314/status/2086203785005654022)
-
----
-
-*Quiet this cycle: @karpathy (nothing since Aug 2) and @bcherny outside the threads above. The @potetotes RSS feed returned 0 items again (known feed issue).*

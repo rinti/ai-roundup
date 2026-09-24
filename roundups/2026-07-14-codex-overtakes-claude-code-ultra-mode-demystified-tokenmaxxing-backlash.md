@@ -70,5 +70,3 @@ The most concrete "which model when" artifact came from **swyx's Big-Boy-project
 - **Gemma 4 on Cerebras**: the [31B open-weight model running at 1,500+ tokens/sec](https://x.com/googlegemma/status/2076713526497026493), a 15x speedup pitched at real-time agentic loops (via LLMJunky).
 - **simonw TIL**: a [cache-friendly recipe for running `uvx tool-name` in GitHub Actions](https://x.com/simonw/status/2076836099910193484) without re-downloading the package every run.
 - **A Grok Build CLI privacy scare**: a user reports a [global kill switch `disable_codebase_upload: true` now returned in settings — after finding indirect evidence that **8 private repos were fully uploaded** during heavy CLI use](https://x.com/dedene/status/2076394152779301305) (via LLMJunky). Unconfirmed, but worth watching if you've used it.
-
-*Note: @potetotes' feed again returned no items (Nitter serves an empty channel for the account), so it's unrepresented in this dispatch. @karpathy and @bcherny had no new posts in the window.*

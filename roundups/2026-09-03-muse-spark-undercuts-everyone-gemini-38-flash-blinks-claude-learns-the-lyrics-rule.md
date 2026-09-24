@@ -108,7 +108,3 @@ Multiverse Computing announced [Quasar 438B](https://multiversecomputing.com/res
 ### Theo on Fable, a day later
 
 No new video from Theo today, but the Latent Space recap surfaced his Fable 5.1 reactions from launch day: he called it ["really a good model"](https://x.com/theo/status/2094892373897892291) and rebuilt his workflows around it, argued the [cache-read price cut](https://x.com/theo/status/2094923123967836243) matters more than the capability deltas, said he was ["not seeing this at all"](https://x.com/theo/status/2094933716464541918) on the rate-limit complaints having used 14% of a weekly Fable limit, and worked out that one 5-hour limit is about 21% of the weekly limit and 38% of the Fable limit. T3 Code [shipped Fable 5.1 support](https://x.com/theo/status/2095013817864671506) the same day.
-
----
-
-*Sourcing note: X account coverage remains unavailable after the Nitter and XCancel shutdowns, and the vxtwitter API returned 404 for every tweet attempted today. Today's pipeline: Simon Willison's blog and Bluesky, the anthropicbot Bluesky mirror, Anthropic's claude.com and docs pages, Meta's research blog, Google DeepMind's model page and model card, Hacker News via firebaseio and Algolia, and Latent Space's AINews recaps, which supplied the x.com links for @theo and @jerryjliu0. Armin Ronacher's blog and Bluesky were quiet; Theo's YouTube feed had no new upload. @mattpocockuk, @trq212, @LLMJunky, @bcherny, @steipete, @swyx, @karpathy, @potetotes, @leerob, and @thsottiaux had no accessible activity to scan today.*

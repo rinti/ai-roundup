@@ -81,7 +81,3 @@ Bryan Cantrill's [The revolt of the reader](https://bcantrill.dtrace.org/2026/09
 ### Benedict Evans on why "just make the tool" misses the point
 
 [AI, tools and transformation](https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation) argues against the idea that AI making tools trivially cheap to build will sweep away enterprise software. Most people are not tool builders and do not think about how their job could be done differently; the hard part was never writing the code but knowing a tool is needed and what it should do; and anything touching 50 or 500 people across departments and regulatory regimes has to be a purchase and a decision, not a spreadsheet. His useful frame is a spectrum from institutionalized software like SAP to improvised substrates like Excel and email, with tasks migrating from improvised to institutionalized as they gain revenue and risk. Relevant background for the "forward-deployed engineer" trend.
-
----
-
-*Coverage note: 13 of 14 tracked accounts were fetched via the community Nitter instances (tw.eir-nya.gay hit its rate limit partway through, so two feeds and one thread were refetched on x.n0g.xyz and nitter.jaydenha.uk). @potetotes still returns nothing. @karpathy, @swyx, @leerob, @trq212 and @bcherny posted nothing new in the window, and @mattpocockuk's only post was non-technical. Thread pages for am.will's RocketLeagueBench comparison and Victor Nunez's computer-use video timed out, so those are summarized from RSS text only.*

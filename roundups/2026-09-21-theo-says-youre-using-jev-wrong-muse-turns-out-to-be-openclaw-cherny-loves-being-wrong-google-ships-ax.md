@@ -65,7 +65,3 @@ Sunday. Simon Willison, Andrej Karpathy, Lee Robinson, Tibo Sottiaux and Matt Po
 - **Armin on rules.** Armin Ronacher's [thread](https://x.com/mitsuhiko/status/2101717658332721599) on the German and Austrian habit of defending every rule, prompted by a Tesla fined 55 euros at an EV charger for lacking an EV sticker, drew the reply of the day from ferologics: "on average the size of a German's AGENTS.md is roughly 3x that of an American."
 - **Grok translations.** Theo [noticed](https://x.com/theo/status/2101867122389594321) Grok's inline translations on X misfiring on Spanish replies.
 - **AI Engineer New York.** The [speaker lineup](https://x.com/aiDotEngineer/status/2101738020630298971) includes the CEOs of Arize, Ramp, Modal, Nous Research and turbopuffer, plus Bridgewater's CTO.
-
----
-
-*Sources: nitter.jaydenha.uk RSS and thread pages for all accounts (@potetotes returns 404, as it has for weeks). Simon Willison's blog, pi.dev, YouTube feeds, GitHub READMEs and Hacker News via the Algolia API for the non-X material.*

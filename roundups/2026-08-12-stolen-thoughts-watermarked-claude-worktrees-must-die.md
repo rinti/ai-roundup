@@ -140,7 +140,3 @@ LLMJunky's [local-rig report](https://x.com/LLMJunky/status/2087038075574669539)
 - **DHH, causing trouble as intended**: ["I don't think many humans are going to be reading or writing code in 5 years, so I don't really think it matters"](https://x.com/dhh/status/2086713611934695848) — the quote-tweet economy has settled on ["life after you stop reading the code"](https://x.com/DustinTownsend/status/2087113602306064471) as the caption.
 - **Naval bait, deflected**: "People who are serious about software train their own models." Theo: ["This would have went so hard in like 2022."](https://x.com/theo/status/2087269971600773357)
 - **Grok naming discourse**: ["I'm sorry but someone has to say it, we cannot go on like this. grok is a terrible name. Please retire it."](https://x.com/LLMJunky/status/2087375094423126122) With X shipping "Grok Bot" a day earlier, this one's not getting resolved.
-
----
-
-*Notes: @potetotes' RSS feed continues to return zero items, and @karpathy had no posts in the window. Thread replies were fetched via Nitter; some non-English replies in the reasoning-traces thread are summarized rather than quoted.*

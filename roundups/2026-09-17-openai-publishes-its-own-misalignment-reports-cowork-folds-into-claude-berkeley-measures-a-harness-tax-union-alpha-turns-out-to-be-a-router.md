@@ -70,5 +70,3 @@ A Wednesday where OpenAI published the kind of training-run anecdotes labs usual
 - **A 4B model beats the Postgres planner.** Rohan Bansal [trained Qwen](https://rohanbansal.com/qorl) with agentic RL to emit pg_hint_plan hints, rewarded by measured runtime against Postgres's default plan, and got 81% faster plans on the Join Order Benchmark. HN front page, 503 points.
 - **Nvidia CUDA in Rust.** Nvidia [announced](https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/) native GPU kernel programming in Rust, two tracks. 569 points on HN.
 - **Dream-RSI.** An [arXiv paper](https://arxiv.org/abs/2609.14858) on recursive self-improvement through evolving worlds, 197 points on HN. Not read in depth.
-
-Footnote: @potetotes still returns 404 on every instance. Karpathy, swyx (own posts), leerob and steipete (own posts) had nothing new in the window.
