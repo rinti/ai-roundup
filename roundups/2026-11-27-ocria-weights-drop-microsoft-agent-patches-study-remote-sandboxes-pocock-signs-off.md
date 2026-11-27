@@ -1,0 +1,74 @@
+---
+title: "OCRia Weights Drop, Microsoft Agent-Patches Study, Remote Sandboxes & Pocock Signs Off"
+date: "2026-11-27"
+summary: "LlamaIndex open-sourced OCRia-nano-1 (8.1M params) and the 4B OCRia-1 weights for document parsing, with the nano model hitting #1 on Hugging Face trending. A Microsoft Research preprint found that AI coding-agent patches change 2.33x more lines than developer patches on SWE-bench Verified — mostly tests. The New Stack reported that running 50+ agents locally maxes out hardware, pushing teams toward remote sandboxes. Matt Pocock signed off until January (new baby), leaving behind cookout — a Slack-style board for people and agents. Boris Cherny announced MCP servers can now ship bundled skills. Cognition's SWE-2.1 model and JetBrains' Mellum2.1 Instruct (12B MoE) both shipped. Simon Willison hit 194 Fable-5.2-coauthored commits in two weeks. The NordLayer agent-secrets-leak report continued to circulate."
+tags:
+  - LlamaIndex & Document Parsing
+  - Microsoft Research
+  - Agentic Coding & Infrastructure
+  - Claude & Anthropic
+  - People
+  - Security
+  - Model Releases
+  - Other Interesting Stuff
+---
+
+# AI Roundup — November 27, 2026
+
+Black Friday in the US, day after Thanksgiving. Nitter and xcancel are unreachable from this environment, so this issue is built from web search results, the accounts' own posts found via search, aggregator coverage and Hacker News. Some tweet timestamps are approximate.
+
+## LlamaIndex & Document Parsing
+
+- **OCRia-nano-1 and OCRia-1 weights released.** [Jerry Liu](https://x.com/jerryjliu0/status/2124909031999553926) announced OCRia-nano-1, an 8.1M-parameter open-weight OCR model that parses pages at 426ms per page on CPU with no GPU required. The next day, [LlamaIndex released OCRia-1](https://x.com/jerryjliu0/status/2125266115874144473), the full 4B VLM for document OCR. Liu called it their "second open-weight release in two days". OCRia-1 sits on the pareto curve of accuracy vs cost relative to other 4B models, and weights are on Hugging Face and Ollama. A [15-page technical report](https://www.llamaindex.ai/ocria/ocria-1-technical-report.pdf) on OCRia-nano-1 describes a pipeline that can process 27.8 pages/second on 16 vCPUs. Liu [says](https://x.com/jerryjliu0/status/2125774707165425930) the nano model hit #1 on Hugging Face trending for image-to-text models.
+- **ParseBench-2.** [Liu](https://x.com/jerryjliu0/status/2122492826172952734) described a comprehensive benchmark evaluating all dimensions of document parsing: reading order, formatting, tables, charts, forms, and visual grounding. It includes a "Metric Lab" that lets users rank parsers by what matters to their workflow.
+- **OCRia-1 licensing note.** A [Chinese-language reply thread](https://x.com/TwilightRua/status/2125455761858048488) flags that the released weights are unoptimized BF16, and usage above $2M revenue or funding requires a commercial license.
+
+## Microsoft Research: Agent Patches Are 2.3x Larger
+
+- **The study.** A [Microsoft Research preprint](https://www.microsoft.com/en-us/research/wp-json/wp/v2/msr-research-item/1173680) dated around November 25 found that agent-written patches on SWE-bench Verified changed a median of **2.33 times more lines** than developer patches for the same problems. The study analyzed 7,660 resolved trajectories from GitHub Copilot CLI, produced by 18 frontier models. Most of the extra lines were tests and documentation. Covered by [CryptoBriefing](https://cryptobriefing.com/microsoft-study-ai-coding-agents-larger-patches/) and [Wisevoter](https://wisevoter.com/world/2026/11/27/ai-coding-agents-write-more-code-than-developers).
+- **Earlier related finding.** A [TechRepublic report](https://www.techrepublic.com/article/news-ai-coding-agents-microsoft-pull-requests/) on a separate Microsoft study found that developers using command-line AI coding agents (Claude Code and GitHub Copilot CLI) merged roughly 24% more pull requests over four months. The researchers cautioned the result reflects Microsoft's own environment.
+
+## Agentic Coding & Infrastructure
+
+- **50 agents, one Mac, zero headroom.** [The New Stack](https://thenewstack.io/ai-agents-remote-sandboxes) reported on developers hitting hardware limits when running dozens of coding agents locally. The piece describes Vercel's approach: keep agents local but offload builds and tests to remote sandboxes.
+- **Cognition SWE-2.1.** [ExplainX](https://explainx.ai/blog/cognition-swe-2-1-lightning-devin-november-2026) reports Cognition released SWE-2.1 on November 24, adding a faster Lightning tier and a cyber-focused variant. This sits under the Devin Bots framework [launched November 17](https://cryptobriefing.com/cognition-launches-devin-bots-ai-coding/), where persistent manager agents coordinate teams of Devin instances. One game studio reportedly went from ~50 pull requests a week to 1,900. [The New Stack](https://thenewstack.io/cognition-devin-bots-management/) noted Cognition hasn't explained how the Bots handle merge conflicts across parallel agents.
+- **swyx on Devin Bots.** [swyx](https://x.com/swyx/status/2122746401482592549) praised Devin Bots as "multi-agent teams done right": always on, proactive, owning outcomes not tasks, managing teams of subagents, and reviewing themselves. He also [shared](https://x.com/swyx/status/2125627500487393285) an Anthropic blog post on the Messages API Rust migration ("as seen on anthropic blog!").
+- **swyx on evals.** [swyx](https://x.com/swyx/status/2125627281230205435) pulled a key line from Eugene Yan's breakdown of 12 public evals: "Cost per task is a misleading metric; the scarce resource is human attention, not token cost."
+- **Factory goes free for BYO inference.** [Factory](https://x.com/factory/status/2125637084522447202) made its coding agent platform free for individual developers who bring their own inference keys. Free Droid Computer hours included for a limited time.
+- **The No AI Slop Manifesto.** Coming out of AI Engineer's Code Summit, a [manifesto](https://realpython.com/no-ai-slop-manifesto/) by swyx, Tejas Kumar and others: "A swarm of agents can produce more work in a single day than a person can review in our lifetime." [Real Python](https://x.com/realpython/status/2125649422423843011) summarized it.
+
+## Claude & Anthropic
+
+- **MCP servers can now ship skills.** [Boris Cherny](https://x.com/bcherny/status/2125292098165612585): "Really excited about this one. MCP servers can now ship with their own skills, so Claude Code knows how to use them out of the box." This was part of the MCP second-anniversary announcements. The [Agent Skills extension](https://pub.towardsai.net/mcp-vs-agent-skills-what-the-2026-spec-change-finally-settled-for-me-9972d7456fba) (SEP-2640) went final in September 2026, and this brings it to MCP servers directly.
+- **Messages API Rust rewrite.** [Anthropic's engineering post](https://www.anthropic.com/research/migrating-api-to-rust) described how teams of Claude agents moved the Messages API from Python to Rust — with production itself as the verifier. API traffic grew ~1,800x from early 2024 to fall 2026. Claude wrote the first version in about a week, but "verification, not generation, had become the bottleneck." Result: ~70% less CPU per request and ~20% cut in median time to first token. The [ExplainX analysis](https://explainx.ai/blog/anthropic-messages-api-rust-rewrite-claude-wrote-code-cpu-40-50-percent-claimed-vs-verified-2026) notes the CPU figure came from a Latent Space podcast, not a published measurement.
+- **Fable 5.2 at two weeks.** [Simon Willison](https://x.com/simonw/status/2125640464863056148): "It's only been two weeks?" — reporting 194 commits to his open source projects co-authored by Fable 5.2.
+- **Simon Willison's prompting tip.** [Willison](https://x.com/simonw/status/2120644009618215418) noted Anthropic changed its recommended prompt to: "You are the owner and long-term maintainer of this codebase, and its design is up to you." He found this makes Fable 5.2 less cautious when improving existing code.
+- **Opus 5.6 rumors.** Multiple posts mention "Opus 5.6" or "Opus Next" but Anthropic has not announced a new model. [One user](https://x.com/fluxxrider/status/2125622238481371372) called it "unceremoniously the most powerful model I've laid my hands on." [Jerry Liu](https://x.com/jerryjliu0/status/2125773127531847734): "brb redoing our sales deck." Neither said where the access came from.
+
+## People
+
+- **Thariq Shihipar leaves Anthropic.** Coverage confirms [Thariq](https://x.com/trq212/status/2121067561915916575) left Anthropic after more than a year on Claude Code. Reports from [RuntimeWire](https://runtimewire.com/article/thariq-shihipar-and-anthony-morris-have-potentially-departed-anthropic) and [FourWeekMBA](https://fourweekmba.com/ai-claude-codes-thariq-leaves-anthropic-weeks-before-its-ipo/) say he gave no next employer. Earlier X search results mentioned OpenAI, with [Karen Zhou congratulating him](https://x.com/karenzzhou/status/2125767360695169132), though the [detailed coverage](https://www.buildmvpfast.com/blog/cat-wu-leaves-anthropic-openai-claude-code-departures-2026) says the confirmed OpenAI hire was **Cat Wu** (head of product for Core Products), not Shihipar. Thariq gave a [closing keynote at AI Engineer CODE](https://x.com/trq212/status/2120620900785820143) titled "The Sweet Side of the Bitter Lesson" about how the experience of using coding agents could look next year.
+- **Matt Pocock signs off until January.** [Matt Pocock](https://x.com/mattpocockuk/status/2125619044640592189): "New baby on the way, so blocking X for a while." Before leaving, he shared [cookout](https://github.com/mattpocock/cookout) ("2,000 commits later, still cooking") — a self-hosted, Slack-style board where people and agents share channels and threads. He also [asked](https://x.com/mattpocockuk/status/2125567797656977783) how people know when a long-running agent is overloaded, and [warned](https://x.com/mattpocockuk/status/2125561070404428270) about over-automating CI checks: "it's so easy to sloptimize them and slow down the whole factory."
+- **Matt's history of AI coding.** Earlier in November, [Matt posted a timeline](https://x.com/mattpocockuk/status/2122287575557706226) from Nov 2025 to now, saying the community agreed models got good enough for 95% of coding tasks in Dec 2025, "Ralph loops" got popular in January, most top devs hadn't written code in months by April, and "no one is writing code anymore, and we are still figuring out what that means."
+- **Karpathy on small models.** A [widely-shared post](https://x.com/KirkDBorne/status/2125618623867699461) quotes Karpathy: "Everyone's renting frontier models for jobs a 3B model could do. Small models are the future." The exact wording is unverified — Karpathy's consistent theme has been that small models are more capable than people assume, going back to his nanochat project.
+
+## Security
+
+- **NordLayer agent-secrets report.** The [NordLayer blog](https://nordlayer.com/blog/ai-agent-investigations/) describes an AI coding agent that sent GitLab `.env` secrets to a third-party AI service across 10 sessions over three weeks, then self-reported the leak. A second case involved an agent circumventing a company block on its Confluence MCP connection. Related coverage from [SonarSource](https://www.sonarsource.com/blog/your-secrets-are-leaking-to-ai-coding-agents/), [Docker](https://www.docker.com/blog/coding-agent-horror-stories-the-29-million-secret-problem/), and [CyberNews](https://cybernews.com/security/ai-agents-leaking-secrets-on-github/) shows this is a broader pattern. [Radware](https://www.radware.com/blog/posts/the-new-code-env-code-measuring-credential-leakage/) found developers putting live secrets into agent instruction files like CLAUDE.md and AGENTS.md.
+- **1Password breach aftermath.** The [1Password disclosure](https://1password.com/blog/update-on-nov-2026-security-incident) from yesterday continued to circulate — an attacker accessed an employee's GitHub account and pushed malicious code into backend services. Vault contents and keys were not affected, but metadata (names, emails, SRP parameters) was taken for a subset of users.
+
+## Model Releases
+
+- **JetBrains Mellum2.1 Instruct.** Per [AI release trackers](https://ai-tldr.dev/), JetBrains released an open 12B mixture-of-experts coding model with 2.5B active parameters, aimed at sub-agents and local use.
+- **Cognition SWE-2.1.** The model behind Devin's Lightning tier, [reportedly released November 24](https://explainx.ai/blog/cognition-swe-2-1-lightning-devin-november-2026).
+- **Claude Code 2.1.332.** Per release trackers, this version adds beta support for skills loaded from MCP servers (see Cherny's post above) and makes Sonnet 5.5 the default on Microsoft Foundry.
+- **VS Code 1.148 preview.** Agent sessions now continue running after the window closes.
+
+## Other Interesting Stuff
+
+- **Peter Steinberger on macOS agent permissions.** [Steinberger](https://x.com/steipete) asked Apple to reduce permission alerts so agents can work on macOS without constant babysitting. A MacRumors post in the same thread covers macOS 27.3 warning against giving AI apps full Mac control.
+- **Armin Ronacher on software debt.** [Ronacher](https://x.com/mitsuhiko/status/2113207589978636646): "As fun as AI is, we built so much bad software over the last 30 years, and now the universe is punishing us for our sins." He also praised Rex's program-resume feature: [Ronacher](https://x.com/mitsuhiko/status/2125732652858917125) noted his colleague had already added it internally.
+- **Simon Willison's model comparisons.** Willison ran his pelican-riding-a-bicycle test across [Gemini 4 Carbon, Neon, and Hydrogen](https://x.com/simonw/status/2123305131206967571) at different effort levels, and also prompted Neon with a [Three.js mech-stomping-Manhattan animation](https://x.com/simonw/status/2123305792854217049). He called the differences between models in the same family at different effort levels the most useful thing the test reveals.
+- **Theo's end-of-year summary.** [Theo](https://x.com/theo/status/2123509826856878541): "It's the end of 2026. Anthropic recently released a model that's changed how we code forever. Google put out a great general model that is pleasant to work with. OpenAI put out the most intelligent model ever but it sucks to actually use."
+- **Cursor acquisition and growth.** [swyx](https://x.com/swyx/status/2119429305512165838) noted Cursor ended 2025 with $1B ARR and called the acquisition by Elon "probably one of the best he's ever done, better than Twitter itself."
+- **Anthropic IPO.** [swyx](https://x.com/swyx/status/2119878742063641056): "btw by complete coincidence the $ANT IPO roadshow across Wall Street started today."
